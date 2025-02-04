@@ -1,0 +1,47 @@
+import React, { useState } from "react";
+
+import { BsStarFill } from "react-icons/bs";
+import { FaLocationDot } from "react-icons/fa6";
+
+const CollegeDetail = ({ college }) => {
+   
+  return (
+    <section className="mt-8 border border-gray-300 rounded-xl overflow-hidden   ">
+      
+      <div className="w-full h-[200px] overflow-hidden">
+        <img
+          className="w-full h-full object-cover"
+          src={college.imageUrl}
+          alt={college.name}
+        />
+      </div>
+
+      
+      <div className="px-3 py-3   pb-10">
+        <h1 className="text-2xl font-bold text-green-500">{college.name}</h1>
+        <div className="mt-2 flex justify-between items-center gap-1 text-gray-700">
+          <div className="flex gap-2 items-center font-medium">
+            <FaLocationDot className="text-gray-700" />
+            <p>{college.location}</p> |
+            <BsStarFill className="text-yellow-500" />
+            <p>{college.rating}</p>
+          </div>
+
+         
+          <div className="flex gap-2 items-center">
+            {college.highlights.map((item, index) => (
+              <span
+                key={index}
+                className="bg-green-200 rounded px-1 font-medium"
+              >
+                {item.value}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CollegeDetail;
