@@ -73,23 +73,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Newsletter */}
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Our Newsletter</h3>
-              <p className="mb-4">
-                Subscribe to our newsletter and receive the latest updates!
-              </p>
-              <div className="flex">
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  className="flex-1 w-full p-2 border border-r-0 rounded-l-full focus:outline-none "
-                />
-                <button className="bg-green-500 border-l-0 border border-black text-white px-4 py-2 rounded-r-full hover:bg-green-600">
-                  Subscribe
-                </button>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
