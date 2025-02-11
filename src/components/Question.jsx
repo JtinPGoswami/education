@@ -1,6 +1,26 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import question from "../assets/question.jpg";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
+
+gsap.registerPlugin(ScrollTrigger);
 const Question = () => {
+
+  const elemRef=useRef()
+
+  useGSAP(() => {
+    gsap.from(elemRef.current, {
+      y: 150,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: elemRef.current,
+        start: "top 95%",
+      },
+    });
+  });
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -34,7 +54,7 @@ const Question = () => {
   };
 
   return (
-    <div className="mt-20" id="help">
+    <div  ref={elemRef} className="mt-20" id="help">
       {/* Heading Section */}
       <div className="text-center md:w-4/5 w-[95%] mx-auto space-y-5 mb-10">
         <h3 className="text-3xl font-bold">

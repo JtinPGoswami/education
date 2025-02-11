@@ -13,15 +13,19 @@ const CollegeInfo = ({ collegeInfo }) => {
 
       {/* table */}
       <div className="mt-8">
-        <table className="w-full border-collapse border border-gray-300">
+        <table className="max-w-full border-collapse border border-gray-300">
           <thead>
             {collegeInfo.highlightsTable.heading.map((item, index) => (
               <tr
                 key={index}
-                className="bg-gray-100 text-gray-700 text-left border border-gray-300  p-2"
+                className="bg-gray-100 text-gray-600 text-left border border-gray-300  p-2  text-wrap"
               >
-                <th className="border border-gray-300 p-2">{item.label}</th>
-                <th className="border border-gray-300 p-2">{item.value}</th>
+                <th className="border border-gray-300 p-2 sm:w-auto ">
+                  {item.label}
+                </th>
+                <th className="border border-gray-300 p-2 text-wrap">
+                  {item.value}
+                </th>
               </tr>
             ))}
           </thead>
@@ -31,10 +35,10 @@ const CollegeInfo = ({ collegeInfo }) => {
                 key={index}
                 className="border border-gray-300 text-gray-700  "
               >
-                <td className="border border-gray-300  text-lg font-semibold p-5">
+                <td className="border border-gray-300  sm:text-lg text-sm font-semibold sm:p-5 p-1 text-wrap ">
                   {item.label}
                 </td>
-                <td className="border border-gray-300 p-5 text-lg">
+                <td className="border border-gray-300 sm:p-5 p-1 sm:text-lg text-sm text-wrap">
                   {item.value}
                 </td>
               </tr>
@@ -254,17 +258,15 @@ const Placements = ({ placementInfo }) => {
           </h1>
           <p className="text-gray-700 font-medium mt-6">{placementInfo.desc}</p>
         </div>
-
-      
       </div>
 
       <div className="border border-gray-300 rounded-xl mt-6 p-4">
         <h3 className="text-xl font-bold text-gray-700">Top Recruiters</h3>
-        <div className="flex flex-wrap gap-6 mt-4">
+        <div className="flex flex-wrap sm:gap-6 gap-3 mt-4">
           {placementInfo.recruiters.map((item, index) => (
             <p
               key={index}
-              className="border border-gray-300 px-2 py-1 rounded-lg font-medium text-gray-600"
+              className="border border-gray-300 px-2 py-1 rounded-lg font-medium text-gray-600 flex-grow text-center"
             >
               {item}
             </p>
@@ -293,13 +295,27 @@ const TextReview = ({ textReview }) => {
 };
 const VideoReview = ({ videoReview }) => {
   console.log(videoReview.video);
-  
+
   return (
-    
     <div className=" p-2  rounded-lg border border-gray-700">
-<video src={`videoReview/${videoReview.video}`} alt="not loded" className="w-full h-44 rounded-xl" loop muted autoPlay ></video>
-<p>{videoReview.review}</p>
+      <video
+        src={`videoReview/${videoReview.video}`}
+        alt="not loded"
+        className="w-full h-44 rounded-xl"
+        loop
+        muted
+        autoPlay
+      ></video>
+      <p>{videoReview.review}</p>
     </div>
   );
 };
-export { CollegeInfo, Courses, Fees, Admissions, Placements, TextReview,VideoReview};
+export {
+  CollegeInfo,
+  Courses,
+  Fees,
+  Admissions,
+  Placements,
+  TextReview,
+  VideoReview,
+};

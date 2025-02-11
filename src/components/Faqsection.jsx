@@ -24,12 +24,12 @@ const FaqSection = ({ faqs }) => {
           >
             <span className="text-gray-800">
               {activeIndex === index ? (
-                <FaMinus className="text-lg font-semibold" />
+                <FaMinus className="sm:text-lg text-base font-semibold" />
               ) : (
-                <FaPlus className="text-lg font-semibold" />
+                <FaPlus className="sm:text-lg text-base font-semibold" />
               )}
             </span>
-            <h3 className="text-lg font-semibold text-gray-600">
+            <h3 className="sm:text-lg text-sm font-semibold text-gray-600">
               {faq.question}
             </h3>
           </div>

@@ -74,7 +74,7 @@ const Header = () => {
       <header className="z-30 fixed top-0 w-full xl:px-32 flex justify-between shadow-md items-center p-4 h-26 bg-white text-black">
         <div className="h-24">
           <img
-            className="h-24 rounded-full"
+            className="h-24 "
             src={logo1}
             alt="campus updates logo"
           />

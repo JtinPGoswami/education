@@ -9,7 +9,6 @@ import { Pagination, Autoplay } from "swiper/modules";
 const ImgCarousel = ({ images }) => {
   const swiperRef = useRef(null);
 
-  // If there are 2 or fewer images, display them statically
   if (images.length <= 2) {
     return (
       <div className="flex justify-center gap-4 my-10">
@@ -27,19 +26,18 @@ const ImgCarousel = ({ images }) => {
 
   return (
     <div className="relative w-4/5 mx-auto my-20">
-      {/* Custom Navigation Buttons */}
       <button
-        className="absolute top-1/2 left-0 z-10 -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-600"
+        className="absolute top-1/2 left-0 z-10 -translate-y-1/2 bg-gray-800 text-white sm:p-3 p-1 rounded-full shadow-lg hover:bg-gray-600"
         onClick={() => swiperRef.current?.slidePrev()}
       >
-        <AiOutlineLeft size={24} />
+        <AiOutlineLeft size={18} />
       </button>
 
       <button
-        className="absolute top-1/2 right-0 z-10 -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-600"
+        className="absolute top-1/2 right-0 z-10 -translate-y-1/2 bg-gray-800 text-white ms:p-3 p-1 rounded-full shadow-lg hover:bg-gray-600"
         onClick={() => swiperRef.current?.slideNext()}
       >
-        <AiOutlineRight size={24} />
+        <AiOutlineRight size={18} />
       </button>
 
       <Swiper
