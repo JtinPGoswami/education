@@ -27,7 +27,7 @@ const CollegeDetail = ({ college }) => {
             <p className="sm:text-base text-sm">{college.rating}</p>
           </div>
           <div className="sm:flex grid grid-cols-2 gap-2 items-center flex-wrap">
-            {college.highlights.map((item, index) => (
+            {college.highlights?.map((item, index) => (
               <span
                 key={index}
                 className="bg-green-200 rounded px-1 font-medium"

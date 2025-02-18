@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import logo1 from "../assets/logo1.png";
 import { FiSearch } from "react-icons/fi";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useCollege } from "../context/CollegeContext";
 import { collegeDetailedData } from "../data/college";
 
@@ -72,13 +72,15 @@ const Header = () => {
   return (
     <>
       <header className="z-30 fixed top-0 w-full xl:px-32 flex justify-between shadow-md items-center p-4 h-26 bg-white text-black">
+       <Link to={"/"}>
         <div className="h-24">
           <img
             className="h-24 "
             src={logo1}
             alt="campus updates logo"
-          />
+            />
         </div>
+            </Link>
         <div className="flex md:w-4/5 w-1/2 md:justify-end justify-center items-center lg:gap-10 gap-3.5">
           <div className="w-full md:w-[30%] hidden relative sm:flex justify-between bg-transparent border border-slate-300 rounded-full h-8">
             <input
@@ -163,9 +165,7 @@ const Header = () => {
             </NavLink>
           </ul>
 
-          <button className="lg:text-base text-sm cursor-pointer text-white px-3 py-1 rounded-3xl bg-[#77d693]">
-            Get Started
-          </button>
+         
         </div>
 
         <RxHamburgerMenu

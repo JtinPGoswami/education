@@ -82,14 +82,12 @@ const HomePage = () => {
     },
   ];
 
-  //carousel settings
-
-  // experts profiles data
+ 
 
   return (
     <>
       <section
-        className="relative w-full h-screen bg-cover bg-center"
+        className="relative w-full md:h-screen h-auto bg-cover bg-center md:py-0 py-10"
         style={{ backgroundImage: `url(${hero_bg})` }}
         id="home"
       >
@@ -98,10 +96,10 @@ const HomePage = () => {
 
         {/* Inner Content */}
         <div className="relative z-10 flex flex-col justify-center md:items-start items-center w-[90%] mx-auto  h-full text-white">
-          <h1 className="lg:text-5xl text-4xl  font-bold mb-4 text-wrap md:w-1/2 2xl:pr-52   leading-16 ">
+          <h1 className="lg:text-5xl md:text-4xl text-2xl font-bold mb-4 text-wrap md:w-1/2 2xl:pr-52   md:leading-16 ">
             Learning Today, Leading Tomorrow
           </h1>
-          <p className="text-2xl text-center mb-20 text-[#ffffffbe] ">
+          <p className="md:text-2xl text-xl text-center md:mb-20 mb-5 text-[#ffffffbe] ">
             We are team of experienced professionals dedicated to guiding your
             MBA journey{" "}
           </p>

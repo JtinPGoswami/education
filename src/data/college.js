@@ -12,7 +12,7 @@ export const collegeDetailedData = [
     detailsHighlight: [
       {
         name: "DY Patil B School Highlights 2025",
-        desc: "Dr. D. Y. Patil B-School is a private institute established in 2014. The institute is approved by the AICTE, Ministry of Education, Govt of India. Additionally, Dr. D. Y. Patil B-School also has membership with professional bodies such as AACSB, AIMA, CEGR, etc. It has also been ranked by various ranking bodies such as IIRF and Times B-School. Dr. D. Y. Patil B-School provides a PGDM and PGDM Global programme in four specialisations and one minor specialisations.",
+        desc: "Dr. D. Y. Patil B-School is a private institute established in 2014. The institute is approved by the AICTE, Ministry of Education, Govt of India. Additionally, Dr. D. Y. Patil B-School also has membership with professional bodies such as AACSB, AIMA, CEGR, etc. It has also been ranked by various ranking bodies such as NIRF and Times B-School. Dr. D. Y. Patil B-School provides a PGDM and PGDM Global programme in four specialisations and one minor specialisations.",
 
         highlightsTable: {
           heading: [
@@ -245,7 +245,7 @@ export const collegeDetailedData = [
     detailsHighlight: [
       {
         name: "IIEBM Pune Highlights 2025",
-        desc: "IIEBM Indus Business School (IIEBM IBS) is a private autonomous engineering institute established in 2010. IIEBM IBS is an affiliate with Savitribai Phule Pune University (SPPU) and is recognised by AICTE and UGC. According to the IIRF 2024 ranking, the institute is ranked among the 44 management colleges. IIEBM Indus Business School has signed an MoU with various national and international organisations.",
+        desc: "IIEBM Indus Business School (IIEBM IBS) is a private autonomous engineering institute established in 2010. IIEBM IBS is an affiliate with Savitribai Phule Pune University (SPPU) and is recognised by AICTE and UGC. According to the NIRF 2024 ranking, the institute is ranked among the 44 management colleges. IIEBM Indus Business School has signed an MoU with various national and international organisations.",
 
         highlightsTable: {
           heading: [
@@ -263,7 +263,7 @@ export const collegeDetailedData = [
               value: "AICTE, Ministry of HRD Government of India",
             },
             { label: "Courses offered", value: "PDGM/ PGD ERP (SAP)" },
-            { label: "Rankings (2024)", value: "44 by IIRF for MBA" },
+            { label: "Rankings (2024)", value: "44 by NIRF for MBA" },
             {
               label: "Entrance exams accepted",
               value: "CAT, MAT, XAT, CMAT, NMAT, MHCET",
@@ -710,7 +710,7 @@ export const collegeDetailedData = [
     detailsHighlight: [
       {
         name: "Jaipuria Institute of Management Noida Highlights 2025",
-        desc: "Jaipuria Institute of Management Noida is one of the leading B-Schools in India. The institute has been ranked 45th among the top Management institutes in India by NIRF 2024. Additionally, it has been ranked 36th among the top Private MBA colleges in India by IIRF 2023. The institute was established in 2004. Jaipuria Institute of Management is approved by AICTE and AIU and accredited by NBA, with A Grade by NAAC, and AACSB. Jaipuria Institute of Management Noida offers PG and doctoral courses to students across Management, Marketing, and other streams.",
+        desc: "Jaipuria Institute of Management Noida is one of the leading B-Schools in India. The institute has been ranked 45th among the top Management institutes in India by NIRF 2024. Additionally, it has been ranked 36th among the top Private MBA colleges in India by NIRF 2023. The institute was established in 2004. Jaipuria Institute of Management is approved by AICTE and AIU and accredited by NBA, with A Grade by NAAC, and AACSB. Jaipuria Institute of Management Noida offers PG and doctoral courses to students across Management, Marketing, and other streams.",
 
         highlightsTable: {
           heading: [

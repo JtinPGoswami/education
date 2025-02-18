@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-gray-700 py-8">
+    <footer className="bg-gray-100 text-gray-700 py-8 px-32">
       <div className="container mx-auto px-4 flex flex-col md:flex-row md:justify-between gap-8">
         {/* Left Section */}
         <div className="md:w-1/3">
@@ -31,56 +31,75 @@ const Footer = () => {
 
         {/* Right Section */}
         <div className="md:w-2/3">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 gap-6">
             {/* Useful Links */}
             <div>
               <h3 className="text-lg font-semibold mb-4">Useful Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link to={"/"} className="hover:text-green-600">Home</Link>
+                  <Link to={"/"} className="hover:text-green-600">
+                    Home
+                  </Link>
                 </li>
                 <li>
-                  <Link to={"/about-us"} className="hover:text-green-600">About us</Link>
+                  <Link to={"/about-us"} className="hover:text-green-600">
+                    About us
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-green-600">Services</a>
+                  <a href="#" className="hover:text-green-600">
+                    Services
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-green-600">Terms of service</a>
+                  <a href="#" className="hover:text-green-600">
+                    Terms of service
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-green-600">Privacy policy</a>
+                  <a href="#" className="hover:text-green-600">
+                    Privacy policy
+                  </a>
                 </li>
               </ul>
             </div>
 
             {/* Our Services */}
-            <div>
+            <div className="w-2/3">
               <h3 className="text-lg font-semibold mb-4">Our Services</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="hover:text-green-600">MBA Admissions Counseling</a>
+                  <a href="#" className="hover:text-green-600">
+                    MBA Admissions Counseling
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-green-600">Profile Building & Resume Review</a>
+                  <a href="#" className="hover:text-green-600">
+                    Profile Building & Resume Review
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-green-600">GMAT/GRE Preparation</a>
+                  <a href="#" className="hover:text-green-600">
+                    GMAT/GRE Preparation
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-green-600">Scholarship Guidance</a>
+                  <a href="#" className="hover:text-green-600">
+                    Scholarship Guidance
+                  </a>
                 </li>
               </ul>
             </div>
-
-            
           </div>
         </div>
       </div>
 
       {/* Footer Bottom */}
       <div className="mt-8 text-center border-t pt-4">
-        <p>© Copyright <strong>Campus-Update</strong> All Rights Reserved</p>
+        <p>
+          © {new Date().getFullYear()} Copyright <strong>Campus-Update</strong>{" "}
+          All Rights Reserved
+        </p>
       </div>
     </footer>
   );

@@ -10,7 +10,7 @@ const ExpertsCard = () => {
     {
       name: "Adv Khushi Maheshwari",
       email: "khushijhawar2016@gmail.com",
-      education: "B.com, LLBA",
+      education: "B.com, LLB",
       experties: "Legal & Compliance, Business Stategy Development",
       img: Khushi,
     },
