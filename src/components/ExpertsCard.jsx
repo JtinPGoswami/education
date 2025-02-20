@@ -40,7 +40,7 @@ const ExpertsCard = () => {
   ];
   
   return (
-    <div className="bg-gray-100 flex items-center mb-6">
+    <div className="bg-gray-100 flex items-center pb-6">
       <div className="w-full mx-auto md:px-4 md:py-4 px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {profiles.map((profile, index) => (
           <div

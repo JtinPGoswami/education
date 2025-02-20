@@ -85,7 +85,7 @@ const CampusAmbassador = () => {
           </ul>
         </div>
       </div>
-      <div className="flex justify-start items-center gap-3.5 mb-8  w-full">
+      <div className="flex md:flex-row flex-col justify-start items-center gap-3.5 mb-8  w-full">
         <h3 className=" text-2xl font-bold ">How to Apply:</h3>
         <p className="text-wrap text-lg pt-1">
           Fill out the form below to apply for the position of Campus Ambassador
