@@ -33,8 +33,7 @@ const CollegeDetailPage = () => {
     courseInfo,
     FAQ,
     Img,
-    textReview,
-    videoReview,
+
   } = selectedCollege;
   const collegeDetail = detailsHighlight[0];
   return (
@@ -52,7 +51,6 @@ const CollegeDetailPage = () => {
             "Fees",
             "Admissions",
             "Placements",
-            "Reviews",
           ].map((tab) => (
             <button
               key={tab}
@@ -105,17 +103,7 @@ const CollegeDetailPage = () => {
           ))}
         </div>
       )}
-      {activeTab === "Reviews" && (
-        <div className="px-4 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-5 mt-10">
-          {textReview.map((review, index) => (
-            <TextReview key={index} textReview={review} />
-          ))}
-
-          {videoReview.map((review, index) => (
-            <VideoReview key={index} videoReview={review} />
-          ))}
-        </div>
-      )}
+      
 
       <FaqSection faqs={FAQ} />
       <ImgCarousel images={Img} />

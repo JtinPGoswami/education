@@ -6,15 +6,11 @@ import CollegeCard from '../components/CollegeCard'
 const AllColleges = () => {
   return (
     <>
-     <section className="relative bg-green-400 text-white text-center py-5 flex flex-col justify-center items-center md:px-10 px-2">
+     <section className="relative bg-green-400 text-white text-center py-14 flex flex-col justify-center items-center md:px-10 px-2 ">
         <h1 className="sm:text-4xl text-xl font-bold">Top Collages</h1>
 
-        <p className="sm:text-lg text-sm font-medium sm:mt-10 mt-2 lg:px-52 px-5">
+        <p className="sm:text-lg text-sm font-medium sm:mt-10 mt-2 lg:px-20 px-5">
         Choosing the right MBA program is one of the most important decisions in your academic and professional journey. We’ve curated a list of top MBA colleges around the world, known for their exceptional education, resources, and alumni networks. Explore these top-tier programs to find the best fit for your career goals.
-        </p>
-
-        <p className=" text-lg font-semibold">
-          <Link to={`/`}>Home</Link> / College
         </p>
       </section>
 

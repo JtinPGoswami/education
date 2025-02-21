@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import hero_bg from "../assets/hero_bg.jpg";
+import hero_video from "../assets/Video/hero_video.mp4";
 import Question from "../components/Question";
 import CampusAmbassador from "../components/CampusAmbassador";
 import CollegeCard from "../components/CollegeCard";
@@ -87,21 +87,29 @@ const HomePage = () => {
   return (
     <>
       <section
-        className="relative w-full md:h-screen h-auto bg-cover bg-center md:py-0 py-10"
-        style={{ backgroundImage: `url(${hero_bg})` }}
-        id="home"
-      >
+  className="relative w-full md:h-screen h-auto bg-black md:py-0 py-10"
+  id="home"
+>
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="absolute top-0 left-0 w-full h-full object-cover"
+  >
+    <source src={hero_video} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
         {/* Overlay using ::before */}
-        <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
+        <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
 
         {/* Inner Content */}
         <div className="relative z-10 flex flex-col justify-center md:items-start items-center w-[90%] mx-auto  h-full text-white">
-          <h1 className="lg:text-5xl md:text-4xl text-2xl font-bold mb-4 text-wrap md:w-1/2 2xl:pr-52   md:leading-16 ">
-            Learning Today, Leading Tomorrow
+          <h1 className="lg:text-5xl md:text-4xl text-2xl font-bold mb-4 text-wrap md:w-1/2 w-full md:leading-16 ">
+          Your Gateway to Informed MBA College Decisions
           </h1>
-          <p className="md:text-2xl text-xl text-center md:mb-20 mb-5 text-[#ffffffbe] ">
-            We are team of experienced professionals dedicated to guiding your
-            MBA journey{" "}
+          <p className="md:text-2xl md:w-[60%] w-full text-xl  md:mb-20 mb-5 text-[#ffffffbe] ">
+          Explore genuine reviews, personalized mentorship, and expert guidance to make the best decision for your MBA journey and beyond.{" "}
           </p>
           <Link to={"/college"}>
           <button className="border text-lg  rounded-full hover:bg-[#77d693] hover:border-[#77d693] px-6  transition-all duration-300 ease-linear py-1">
@@ -125,16 +133,18 @@ const HomePage = () => {
         </div>
       </section>
       <Question />
+      <hr className="my-10 border-2 text-[#3f3b3b6b] "></hr>
       <CampusAmbassador />
-      <div className="w-full px-[5%] mx-auto  pt-10 space-y-7 mt-20  text-center ">
+      <hr className="my-10 border-2  text-[#3f3b3b6b] "></hr>
+      <div className="w-full px-[5%] mx-auto  my-10 space-y-7   text-center ">
         <div className="flex justify-between items-center md:flex-row flex-col-reverse">
           <div className="md:w-1/2 w-full">
             <h1 className="text-black mb-5 text-4xl font-bold ">
-              {" "}
-              <span className="text-[#5FCF80]">About Campus </span>
-              Updates
+              {" "}About
+              <span className="text-[#5FCF80]"> Campus Updates</span>
+              
             </h1>
-            <p className="text-2xl font-semibold">
+            <p className="text-2xl font-normal text-start mt-5">
               At Campus Updates, we empower students to make confident, informed
               decisions about their education. Whether you're seeking an MBA,
               law, engineering, or medical degree, we provide comprehensive
@@ -156,20 +166,21 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <hr className="my-10 border-2 text-[#3f3b3b6b] "></hr>
       {/* college section */}
-      <div className="w-full px-[5%] mt-32" id="collages">
+      <div className="w-full px-[5%] mt-10 mb-20" id="collages">
         <div className="w-full  flex justify-between items-center md:flex-row flex-col-reverse ">
           <div className=" md:w-1/2 w-full ">
             <h1 className="font-bold text-slate-900 text-3xl mb-4 ">
-              Discover{" "}
-              <span className="text-[#5FCF80]"> the Best Colleges </span>
+              Discover the{" "}
+              <span className="text-[#5FCF80]">  Best Colleges </span>
               for Your Future
             </h1>
             <p className="font-medium italic text-gray-600 text-xl">
               Explore a wide range of colleges across MBA, Law, Engineering, and
               Medical fields.
             </p>
-            <p className="text-base font-medium text-gray-500">
+            <p className="text-base font-medium text-gray-500 mt-5">
               Selecting the right college is a crucial decision in shaping your
               future. At Campus Updates, we provide in-depth reviews and ratings
               of top colleges in India across various domains, including MBA,
@@ -201,7 +212,7 @@ const HomePage = () => {
             </ul>
             <div className="md:text-left text-center mt-10">
               <Link to={"/college"}>
-              <button className="md:w-44 w-4/5   bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition">
+              <button className="md:w-auto w-4/5 px-8  bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition text-lg">
                 Browse College Profiles
               </button>
               </Link>
@@ -224,8 +235,9 @@ const HomePage = () => {
           ))}
         </div>
       </div>
+      <hr className="my-10 border-2 text-[#3f3b3b6b] "></hr>
       {/* events section */}
-      <div className="w-full px-[5%] mt-52" id="event">
+      <div className="w-full px-[5%] my-20" id="event">
         <div className="w-full flex justify-between items-center md:flex-row flex-col-reverse">
           <div className=" w-full">
             <h1 className="font-bold text-slate-900 text-3xl mb-4">
@@ -281,8 +293,9 @@ const HomePage = () => {
           ))}
         </div>
       </div>
+      <hr className="my-10 border-2 text-[#3f3b3b6b] "></hr>
       {/* domain section */}
-      <section className="mt-52 w-full px-[5%]  " id="courses">
+      <section className="my-20 w-full px-[5%]  " id="courses">
         <h1 className="font-bold text-gray-900 text-3xl mb-5">
           Explore <span className="text-[#5FCF80]"> Key Domains </span>
           of Study
@@ -295,7 +308,7 @@ const HomePage = () => {
           Our platform also offers valuable resources to help you make informed
           choices in your chosen field of study. From understanding core
           subjects to career pathways and the skills needed for success, we
-          provide content to guide you in
+          provide content to guide you in :
         </p>
         <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-8 mt-10 ">
           {Domains.map((domain, idx) => (
@@ -308,8 +321,9 @@ const HomePage = () => {
           </button>
         </div>
       </section>
+      <hr className="my-10 border-2 text-[#3f3b3b6b] "></hr>
       {/*Scholarships & Entrance Exam Guidance Section */}
-      <section className="w-full px-[5%] mt-52 space-y-5">
+      <section className="w-full px-[5%] my-20 space-y-5">
         <h2 className="text-black text-3xl font-bold">
           Maximize Your Opportunities with{" "}
           <span className="text-[#5FCF80]"> Scholarships & Exam Guidance </span>
@@ -339,10 +353,10 @@ const HomePage = () => {
           </button>
         </div>
       </section>
-
+      <hr className="my-10 border-2 text-[#3f3b3b6b] "></hr>
       {/* testimonial */}
 
-      <section className="w-full px-[5%] mt-52 space-y-5">
+      <section className="w-full px-[5%] my-20 space-y-5">
         <h3 className="text-3xl font-bold">
           See What <span className="text-[#5FCF80]">Our Students</span> Have to
           Say
@@ -360,10 +374,11 @@ const HomePage = () => {
         <Testimonial />
       </section>
       {/*experts section*/}
-      <section className=" mt-32" id="expert">
+      <hr className="my-10 border-2 text-[#3f3b3b6b] "></hr>
+      <section className=" mt-20" id="expert">
         <div className="px-[5%]">
           <h1 className="mb-6 text-3xl font-bold">
-            Meet our <span className="text-[#5FCF80]"> Experts </span>
+            Meet Our <span className="text-[#5FCF80]"> Experts </span>
           </h1>
           <h4 className="mb-6 text-xl font-semibold">
             Guiding you through your educational journey with years of

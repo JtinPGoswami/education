@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import logo1 from "../assets/logo1.png";
+import logo_main from "../assets/logo_main.png";
 import { FiSearch } from "react-icons/fi";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 import { Link, NavLink, useNavigate } from "react-router-dom";
@@ -76,7 +76,7 @@ const Header = () => {
         <div className="h-24">
           <img
             className="h-24 "
-            src={logo1}
+            src={logo_main}
             alt="campus updates logo"
             />
         </div>
@@ -138,7 +138,7 @@ const Header = () => {
               }
             >
               <li className="cursor-pointer text-base font-light hover:text-[#77d693]">
-                Collages
+                Colleges
               </li>
             </NavLink>
             <li
@@ -188,11 +188,13 @@ const Header = () => {
         }`}
       >
         <div className="flex justify-between items-center p-4 border-b">
+          <Link to={"/"}>
           <img
             className="h-12 rounded-full"
-            src={logo1}
+            src={logo_main}
             alt="campus updates logo"
-          />
+            />
+            </Link>
           <RxCross2
             className="text-2xl cursor-pointer text-black"
             onClick={toggleSidebar}

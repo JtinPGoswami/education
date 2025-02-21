@@ -19,7 +19,7 @@ const DomainCard = ({domain}) => {
             <MdEngineering />
           )}
         </p>
-        <h3 className="xl:text-3xl text-xl font-bold">{domain.title}</h3>
+        <h3 className="2xl:text-3xl text-xl font-bold">{domain.title}</h3>
       </div>
       <p className="font-light italic mt-5 text-gray-700 group-hover:text-gray-900">{domain.description}</p>
     </div>

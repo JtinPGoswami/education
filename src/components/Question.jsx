@@ -56,7 +56,7 @@ const Question = () => {
   return (
     <div  ref={elemRef} className="mt-20" id="help">
       {/* Heading Section */}
-      <div className="text-center md:w-4/5 w-[95%] mx-auto space-y-5 mb-10">
+      <div className="text-center md:w-[60%] w-[95%] mx-auto space-y-5 mb-10">
         <h3 className="text-3xl font-bold">
           Have Questions? We’re Here to Help!
         </h3>
@@ -66,7 +66,7 @@ const Question = () => {
         </p>
         <p>
           Not sure which college is the right fit for you? Fill out the form
-          below, and our experts will get in touch to assist you.
+          below, and our experts will get in touch to assist you.Fill out the form below and one of our experts will contact you at the best time to discuss your options.
         </p>
       </div>
 

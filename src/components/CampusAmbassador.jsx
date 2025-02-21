@@ -24,7 +24,7 @@ const CampusAmbassador = () => {
   };
 
   return (
-    <section className="w-[90%] mx-auto  mt-42 space-y-16">
+    <section className="w-[90%] mx-auto  mt-20 space-y-16">
       <div>
         <h1 className="md:text-3xl text-2xl font-bold">
           Become a Campus Ambassador <br />
