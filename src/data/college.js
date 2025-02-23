@@ -2346,7 +2346,7 @@ export const collegeDetailedData = [
           {
             labelOne: "MBA/PGDM",
             labelTwo: "Minimum 50% to 60% in the graduation",
-            labelThree: "https://www.shiksha.com/mba/xat-exam",
+            labelThree: "mba/xat-exam",
           },
         ],
       },
