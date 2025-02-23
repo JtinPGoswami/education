@@ -18,9 +18,7 @@ const ContactUsPage = () => {
           out to us today!"
         </p>
 
-        <p className="absolute bottom-4  left-4 text-lg font-semibold">
-          <Link to={`/`}>Home</Link> / Contact
-        </p>
+        
       </section>
 
       {/* contactus form section */}

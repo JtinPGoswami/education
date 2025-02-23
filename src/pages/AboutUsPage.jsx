@@ -62,9 +62,7 @@ const AboutUsPage = () => {
           Your Trusted Guide to Higher Education and Career Success!
         </p>
 
-        <p className="absolute bottom-4  left-4 text-lg font-semibold">
-          <Link to={`/`}>Home</Link> / About-us
-        </p>
+        
       </section>
 
       <section className="px-4">

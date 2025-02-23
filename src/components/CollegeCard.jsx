@@ -10,10 +10,10 @@ selectCollege(college)
 navigate("/college-detail")
   }
   return (
-    <div className="space-y-2 box-border flex sm:flex-row flex-col justify-start gap-4  p-2 rounded-lg border-2 border-transparent shadow-2xl  hover:border-t-[#77d693] group transition-colors ease-linear duration-700 sm:h-36 sm:py-0 py-2">
-      <img src={college.imageUrl} alt="" className="sm:w-[40%] w-full h-full" />
+    <div className="space-y-2 box-border flex sm:flex-row flex-col justify-start gap-4  p-2 mx-2 rounded-lg border-2 sm:border-transparent shadow-2xl border-[#77d693]   hover:border-t-[#77d693] group transition-colors ease-linear duration-700 sm:h-36 sm:py-0 py-2">
+      <img src={college.logo} alt="" className="sm:w-[40%] sm:h-auto w-50 h-50 mx-auto" />
       <div className="w-full">
-        <h2 className="text-gray-900 flex flex-col justify-between h-16  group-hover:text-[#77d693] text-lg font-medium group-hover:scale-105 transition-transform ease-linear duration-200">
+        <h2 className="text-gray-900 flex flex-col justify-between h-16 pt-3 group-hover:text-[#77d693] text-base font-medium group-hover:scale-105 transition-transform ease-linear duration-200">
           {college.name}
         </h2>
         <p className="text-lg italic font-light">{college.location}</p>

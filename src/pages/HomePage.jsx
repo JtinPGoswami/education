@@ -81,40 +81,40 @@ const HomePage = () => {
         "Explore medical colleges and career options in the healthcare industry. From MBBS to medical specializations like surgery, pediatrics, and psychiatry, get expert insights into preparing for medical school entrance exams like NEET.",
     },
   ];
-
- 
-
   return (
     <>
       <section
-  className="relative w-full md:h-screen h-auto bg-black md:py-0 py-10"
-  id="home"
->
-  <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    className="absolute top-0 left-0 w-full h-full object-cover"
-  >
-    <source src={hero_video} type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+        className="relative w-full md:h-screen h-auto bg-black md:py-0 py-10"
+        id="home"
+      >
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover"
+        >
+          <source src={hero_video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         {/* Overlay using ::before */}
         <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
 
         {/* Inner Content */}
         <div className="relative z-10 flex flex-col justify-center md:items-start items-center w-[90%] mx-auto  h-full text-white">
           <h1 className="lg:text-5xl md:text-4xl text-2xl font-bold mb-4 text-wrap md:w-1/2 w-full md:leading-16 ">
-          Your Gateway to Informed MBA College Decisions
+            Your Gateway to Informed MBA College Decisions
           </h1>
+
+
           <p className="md:text-2xl md:w-[60%] w-full text-xl  md:mb-20 mb-5 text-[#ffffffbe] ">
-          Explore genuine reviews, personalized mentorship, and expert guidance to make the best decision for your MBA journey and beyond.{" "}
+            Explore genuine reviews, personalized mentorship, and expert
+            guidance to make the best decision for your MBA journey and beyond.{" "}
           </p>
           <Link to={"/college"}>
-          <button className="border text-lg  rounded-full hover:bg-[#77d693] hover:border-[#77d693] px-6  transition-all duration-300 ease-linear py-1">
-            Start Your College Search Today
-          </button>
+            <button className="border text-lg  rounded-full hover:bg-[#77d693] hover:border-[#77d693] px-6  transition-all duration-300 ease-linear py-1">
+              Start Your College Search Today
+            </button>
           </Link>
         </div>
       </section>
@@ -140,9 +140,9 @@ const HomePage = () => {
         <div className="flex justify-between items-center md:flex-row flex-col-reverse">
           <div className="md:w-1/2 w-full">
             <h1 className="text-black mb-5 text-4xl font-bold ">
-              {" "}About
+              {" "}
+              About
               <span className="text-[#5FCF80]"> Campus Updates</span>
-              
             </h1>
             <p className="text-2xl font-normal text-start mt-5">
               At Campus Updates, we empower students to make confident, informed
@@ -168,12 +168,12 @@ const HomePage = () => {
       </div>
       <hr className="my-10 border-2 text-[#3f3b3b6b] "></hr>
       {/* college section */}
-      <div className="w-full px-[5%] mt-10 mb-20" id="collages">
+      <div className="w-full px-[5%] mt-10 mb-20" id="Colleges">
         <div className="w-full  flex justify-between items-center md:flex-row flex-col-reverse ">
           <div className=" md:w-1/2 w-full ">
             <h1 className="font-bold text-slate-900 text-3xl mb-4 ">
               Discover the{" "}
-              <span className="text-[#5FCF80]">  Best Colleges </span>
+              <span className="text-[#5FCF80]"> Best Colleges </span>
               for Your Future
             </h1>
             <p className="font-medium italic text-gray-600 text-xl">
@@ -212,9 +212,9 @@ const HomePage = () => {
             </ul>
             <div className="md:text-left text-center mt-10">
               <Link to={"/college"}>
-              <button className="md:w-auto w-4/5 px-8  bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition text-lg">
-                Browse College Profiles
-              </button>
+                <button className="md:w-auto w-4/5 px-8  bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition text-lg">
+                  Browse College Profiles
+                </button>
               </Link>
             </div>
           </div>
@@ -230,7 +230,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-20 sm:px-10 px-0 mt-10">
-          {collegeDetailedData.slice(0,4).map((college, idx) => (
+          {collegeDetailedData.slice(0, 4).map((college, idx) => (
             <CollegeCard key={idx} college={college} />
           ))}
         </div>

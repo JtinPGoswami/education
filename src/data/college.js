@@ -6,8 +6,9 @@ export const collegeDetailedData = [
     establishmentYear: "2000",
     type: "Private Institute",
     id: 1,
-    imageUrl:
-      "https://images.shiksha.com/mediadata/images/1732515149phpEVi8FT_1280x960.jpg",
+    imageUrl: "colleges/dy_patil_cover.jpeg",
+    logo: "colleges/DY Patil B School.png",
+    brochure: "brochure/1 dy_patil_b_school.pdf",
     highlights: [{ value: "Private Institute" }, { value: "Estb. 2000" }],
     detailsHighlight: [
       {
@@ -161,15 +162,11 @@ export const collegeDetailedData = [
       },
     ],
     Img: [
-      "https://images.shiksha.com/mediadata/images/1732515958phpyNMjl4.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1732516008phpLjiG05.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1514354711phplNFcJA.png",
-
-      "https://images.shiksha.com/mediadata/images/1732515411php40EIUx.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1514354724phpu3sXat.png",
+      "colleges/dy_patil_1.jpeg",
+      "colleges/dy_patil_2.jpeg",
+      "colleges/dy_patil_3.jpeg",
+      "colleges/dy_patil_4.jpeg",
+      "colleges/dy_patil_5.jpeg",
     ],
     textReview: [
       {
@@ -239,8 +236,9 @@ export const collegeDetailedData = [
     establishmentYear: "2000",
     type: "Private Institute",
     id: 2,
-    imageUrl:
-      "https://images.shiksha.com/mediadata/images/1727699788phppUwI8P_1280x960.jpg",
+    imageUrl: "colleges/IIEBM_Indus_cover.jpeg",
+    logo: "colleges/IIEBM Indus Business School.png",
+    brochure: "brochure/2 IIEBM_indus.pdf",
     highlights: [{ value: "Private Institute" }, { value: "Estb. 2000" }],
     detailsHighlight: [
       {
@@ -395,70 +393,11 @@ export const collegeDetailedData = [
       },
     ],
     Img: [
-      "https://images.shiksha.com/mediadata/images/1727681398phpDbBPwg.jpeg",
-      "https://images.shiksha.com/mediadata/images/1727681640php1PSwHu.jpeg",
-      "https://images.shiksha.com/mediadata/images/1727681721phpxBu19U.jpeg",
-      "https://images.shiksha.com/mediadata/images/1727681096phpa1Xg3n.jpeg",
-      "https://images.shiksha.com/mediadata/images/1727681690phpOu6dXz.jpeg",
-    ],
-    textReview: [
-      {
-        name: "John Doe",
-        rating: 4.5,
-        review:
-          "XYZ College offers a great learning environment with excellent faculty and modern campus facilities. The academic programs are well-structured, and the placement support is strong, helping students secure good opportunities.",
-      },
-      {
-        name: "Jane Smith",
-        rating: 4.0,
-        review:
-          "The college has a wonderful atmosphere, with experienced professors and a wide range of extracurricular activities. The campus is clean, but I wish there were more food options available.",
-      },
-      {
-        name: "Mike Johnson",
-        rating: 5.0,
-        review:
-          "I had an amazing experience at XYZ College. The faculty is very supportive, and the campus is equipped with all the necessary amenities for a comfortable learning experience. Highly recommend!",
-      },
-      {
-        name: "Sarah Lee",
-        rating: 3.5,
-        review:
-          "The academic structure is solid, but the campus could use some improvements in terms of infrastructure. Placement opportunities are decent, but I think more internships could be offered.",
-      },
-      {
-        name: "David Brown",
-        rating: 4.8,
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs.",
-      },
-    ],
-    videoReview: [
-      {
-        video: "review1.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review2.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review3.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review4.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review5.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
+      "colleges/IIEBM_Indus_1.jpeg",
+      "colleges/IIEBM_Indus_2.jpeg",
+      "colleges/IIEBM_Indus_3.jpeg",
+      "colleges/IIEBM_Indus_4.jpeg",
+      "colleges/IIEBM_Indus_5.jpeg",
     ],
   },
 
@@ -468,8 +407,9 @@ export const collegeDetailedData = [
     rating: "4.5/5",
     type: "Private Institute",
     id: 3,
-    imageUrl:
-      "https://images.shiksha.com/mediadata/images/1611729078phpNvHqsN.jpeg",
+    imageUrl: "colleges/ISMS_cover.jpeg",
+    logo: "colleges/IS Management Studies.png",
+    brochure: "brochure/3 ISMS.pdf",
     highlights: [{ value: "Private Institute" }],
     detailsHighlight: [
       {
@@ -623,74 +563,15 @@ export const collegeDetailedData = [
       },
     ],
     Img: [
-      "https://images.shiksha.com/mediadata/images/1614241112phpql4s2r.jpeg",
+      "colleges/ISMS_1.jpeg",
 
-      "https://images.shiksha.com/mediadata/images/1614241229phpNZVAAP.jpeg",
+      "colleges/ISMS_2.jpeg",
 
-      "https://images.shiksha.com/mediadata/images/1611729257phpZe3H0l.jpeg",
+      "colleges/ISMS_3.jpeg",
 
-      "https://images.shiksha.com/mediadata/images/1614244353phpIHkKvD.jpeg",
+      "colleges/ISMS_4.jpeg",
 
-      "https://images.shiksha.com/mediadata/images/1611729101phpit5rnL.jpeg",
-    ],
-    textReview: [
-      {
-        name: "John Doe",
-        rating: 4.5,
-        review:
-          "XYZ College offers a great learning environment with excellent faculty and modern campus facilities. The academic programs are well-structured, and the placement support is strong, helping students secure good opportunities.",
-      },
-      {
-        name: "Jane Smith",
-        rating: 4.0,
-        review:
-          "The college has a wonderful atmosphere, with experienced professors and a wide range of extracurricular activities. The campus is clean, but I wish there were more food options available.",
-      },
-      {
-        name: "Mike Johnson",
-        rating: 5.0,
-        review:
-          "I had an amazing experience at XYZ College. The faculty is very supportive, and the campus is equipped with all the necessary amenities for a comfortable learning experience. Highly recommend!",
-      },
-      {
-        name: "Sarah Lee",
-        rating: 3.5,
-        review:
-          "The academic structure is solid, but the campus could use some improvements in terms of infrastructure. Placement opportunities are decent, but I think more internships could be offered.",
-      },
-      {
-        name: "David Brown",
-        rating: 4.8,
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs.",
-      },
-    ],
-    videoReview: [
-      {
-        video: "review1.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review2.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review3.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review4.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review5.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
+      "colleges/ISMS_5.jpeg",
     ],
   },
 
@@ -700,8 +581,9 @@ export const collegeDetailedData = [
     rating: "4.0/5",
     type: "Private Institute",
     id: 4,
-    imageUrl:
-      "https://images.shiksha.com/mediadata/images/1732692430phpnhEnlY.jpeg",
+    imageUrl: "colleges/jaipuria_noida_cover.jpeg",
+    logo: "colleges/Jaipuria-Institute-of-Management.png",
+    brochure: "brochure/4 jaipuria.pdf",
     highlights: [
       { value: "B++ NAAC accredited" },
       { value: "Private Institute" },
@@ -851,74 +733,11 @@ export const collegeDetailedData = [
       },
     ],
     Img: [
-      "https://images.shiksha.com/mediadata/images/1661325358phpUY4gUz.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1511354442phpheJbGO.png",
-
-      "https://images.shiksha.com/mediadata/images/1539261931phpaBvEr9.png",
-
-      "https://images.shiksha.com/mediadata/images/1511353785phpd1kYo5.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1607078004phpRpKwIe.png",
-    ],
-    textReview: [
-      {
-        name: "John Doe",
-        rating: 4.5,
-        review:
-          "XYZ College offers a great learning environment with excellent faculty and modern campus facilities. The academic programs are well-structured, and the placement support is strong, helping students secure good opportunities.",
-      },
-      {
-        name: "Jane Smith",
-        rating: 4.0,
-        review:
-          "The college has a wonderful atmosphere, with experienced professors and a wide range of extracurricular activities. The campus is clean, but I wish there were more food options available.",
-      },
-      {
-        name: "Mike Johnson",
-        rating: 5.0,
-        review:
-          "I had an amazing experience at XYZ College. The faculty is very supportive, and the campus is equipped with all the necessary amenities for a comfortable learning experience. Highly recommend!",
-      },
-      {
-        name: "Sarah Lee",
-        rating: 3.5,
-        review:
-          "The academic structure is solid, but the campus could use some improvements in terms of infrastructure. Placement opportunities are decent, but I think more internships could be offered.",
-      },
-      {
-        name: "David Brown",
-        rating: 4.8,
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs.",
-      },
-    ],
-    videoReview: [
-      {
-        video: "review1.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review2.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review3.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review4.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review5.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
+      "colleges/jaipuria_noida_1.png",
+      "colleges/jaipuria_noida_2.png",
+      "colleges/jaipuria_noida_3.png",
+      "colleges/jaipuria_noida_4.jpeg",
+      "colleges/jaipuria_noida_5.jpeg",
     ],
   },
 
@@ -928,8 +747,9 @@ export const collegeDetailedData = [
     rating: "4.1/5",
     type: "Private Institute",
     id: 5,
-    imageUrl:
-      "https://images.shiksha.com/mediadata/images/1661339923phpIqLMVZ.jpeg",
+    imageUrl: "colleges/jaipuria_lucknow_cover.jpeg",
+    logo: "colleges/Jaipuria-Institute-of-Management.png",
+    brochure: "brochure/4 jaipuria.pdf",
     highlights: [
       { value: "A++ NAAC accredited" },
       { value: "Private Institute" },
@@ -1082,74 +902,11 @@ export const collegeDetailedData = [
       },
     ],
     Img: [
-      "https://images.shiksha.com/mediadata/images/1670958097phpml3RNe.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1539345735phpHBL7K2.png",
-
-      "https://images.shiksha.com/mediadata/images/1670959990phpeUsc1d.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1539345937php2lwI0z.png",
-
-      "https://images.shiksha.com/mediadata/images/1539345815php5KAaUp.png",
-    ],
-    textReview: [
-      {
-        name: "John Doe",
-        rating: 4.5,
-        review:
-          "XYZ College offers a great learning environment with excellent faculty and modern campus facilities. The academic programs are well-structured, and the placement support is strong, helping students secure good opportunities.",
-      },
-      {
-        name: "Jane Smith",
-        rating: 4.0,
-        review:
-          "The college has a wonderful atmosphere, with experienced professors and a wide range of extracurricular activities. The campus is clean, but I wish there were more food options available.",
-      },
-      {
-        name: "Mike Johnson",
-        rating: 5.0,
-        review:
-          "I had an amazing experience at XYZ College. The faculty is very supportive, and the campus is equipped with all the necessary amenities for a comfortable learning experience. Highly recommend!",
-      },
-      {
-        name: "Sarah Lee",
-        rating: 3.5,
-        review:
-          "The academic structure is solid, but the campus could use some improvements in terms of infrastructure. Placement opportunities are decent, but I think more internships could be offered.",
-      },
-      {
-        name: "David Brown",
-        rating: 4.8,
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs.",
-      },
-    ],
-    videoReview: [
-      {
-        video: "review1.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review2.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review3.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review4.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review5.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
+      "colleges/jaipuria_lucknow_1.jpeg",
+      "colleges/jaipuria_lucknow_2.jpeg",
+      "colleges/jaipuria_lucknow_3.png",
+      "colleges/jaipuria_lucknow_4.jpeg",
+      "colleges/jaipuria_lucknow_5.png",
     ],
   },
 
@@ -1159,8 +916,9 @@ export const collegeDetailedData = [
     rating: "4.3/5",
     type: "Private Institute",
     id: 6,
-    imageUrl:
-      "https://images.shiksha.com/mediadata/images/1646895714php0Qc6aj.jpeg",
+    imageUrl: "colleges/jaipuria_indore_cover.jpeg",
+    logo: "colleges/Jaipuria-Institute-of-Management.png",
+    brochure: "brochure/4 jaipuria.pdf",
     highlights: [{ value: "Private Institute" }, { value: "Estb. 2010" }],
 
     detailsHighlight: [
@@ -1283,74 +1041,11 @@ export const collegeDetailedData = [
       },
     ],
     Img: [
-      "https://images.shiksha.com/mediadata/images/1646895714php0Qc6aj.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1539602939phpiLlA5N.png",
-
-      "https://images.shiksha.com/mediadata/images/1511443014phpIS4KJy.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1511442844phpF20up8.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1511442831phpIfRWpP.jpeg",
-    ],
-    textReview: [
-      {
-        name: "John Doe",
-        rating: 4.5,
-        review:
-          "XYZ College offers a great learning environment with excellent faculty and modern campus facilities. The academic programs are well-structured, and the placement support is strong, helping students secure good opportunities.",
-      },
-      {
-        name: "Jane Smith",
-        rating: 4.0,
-        review:
-          "The college has a wonderful atmosphere, with experienced professors and a wide range of extracurricular activities. The campus is clean, but I wish there were more food options available.",
-      },
-      {
-        name: "Mike Johnson",
-        rating: 5.0,
-        review:
-          "I had an amazing experience at XYZ College. The faculty is very supportive, and the campus is equipped with all the necessary amenities for a comfortable learning experience. Highly recommend!",
-      },
-      {
-        name: "Sarah Lee",
-        rating: 3.5,
-        review:
-          "The academic structure is solid, but the campus could use some improvements in terms of infrastructure. Placement opportunities are decent, but I think more internships could be offered.",
-      },
-      {
-        name: "David Brown",
-        rating: 4.8,
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs.",
-      },
-    ],
-    videoReview: [
-      {
-        video: "review1.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review2.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review3.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review4.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review5.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
+      "colleges/jaipuria_indore_1.jpeg",
+      "colleges/jaipuria_indore_2.jpeg",
+      "colleges/jaipuria_indore_3.jpeg",
+      "colleges/jaipuria_indore_4.jpeg",
+      "colleges/jaipuria_indore_5.jpeg",
     ],
   },
 
@@ -1360,8 +1055,9 @@ export const collegeDetailedData = [
     rating: "4.4/5",
     type: "Private Institute",
     id: 7,
-    imageUrl:
-      "https://images.shiksha.com/mediadata/images/1732685142php4a5Vkj.jpeg",
+    imageUrl: "colleges/jaipuria_jaipur_cover.jpeg",
+    logo: "colleges/Jaipuria-Institute-of-Management.png",
+    brochure: "brochure/4 jaipuria.pdf",
     highlights: [{ value: "Private Institute" }, { value: "Estb. 2006" }],
 
     detailsHighlight: [
@@ -1502,74 +1198,11 @@ export const collegeDetailedData = [
       },
     ],
     Img: [
-      "https://images.shiksha.com/mediadata/images/1575473649phpH801Fb.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1539586555phpyo4ttk.png",
-
-      "https://images.shiksha.com/mediadata/images/1539586489phpBqJsWx.png",
-
-      "https://images.shiksha.com/mediadata/images/1511438477phpfXzXW4.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1511439152php4W54Py.jpeg",
-    ],
-    textReview: [
-      {
-        name: "John Doe",
-        rating: 4.5,
-        review:
-          "XYZ College offers a great learning environment with excellent faculty and modern campus facilities. The academic programs are well-structured, and the placement support is strong, helping students secure good opportunities.",
-      },
-      {
-        name: "Jane Smith",
-        rating: 4.0,
-        review:
-          "The college has a wonderful atmosphere, with experienced professors and a wide range of extracurricular activities. The campus is clean, but I wish there were more food options available.",
-      },
-      {
-        name: "Mike Johnson",
-        rating: 5.0,
-        review:
-          "I had an amazing experience at XYZ College. The faculty is very supportive, and the campus is equipped with all the necessary amenities for a comfortable learning experience. Highly recommend!",
-      },
-      {
-        name: "Sarah Lee",
-        rating: 3.5,
-        review:
-          "The academic structure is solid, but the campus could use some improvements in terms of infrastructure. Placement opportunities are decent, but I think more internships could be offered.",
-      },
-      {
-        name: "David Brown",
-        rating: 4.8,
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs.",
-      },
-    ],
-    videoReview: [
-      {
-        video: "review1.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review2.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review3.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review4.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review5.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
+      "colleges/jaipuria_jaipur_1.jpeg",
+      "colleges/jaipuria_jaipur_2.jpeg",
+      "colleges/jaipuria_jaipur_3.jpeg",
+      "colleges/jaipuria_jaipur_4.jpeg",
+      "colleges/jaipuria_jaipur_5.png",
     ],
   },
 
@@ -1579,8 +1212,9 @@ export const collegeDetailedData = [
     rating: "4.0/5",
     type: "Private Institute",
     id: 8,
-    imageUrl:
-      "https://images.shiksha.com/mediadata/images/1610098406phpqP0iMl.png",
+    imageUrl: "colleges/BML_munjal_cover.png",
+    logo: "colleges/BML Munjal University.png",
+    brochure: "brochure/8 BML munjal brochure.pdf",
     highlights: [
       { value: "A NAAC accredited" },
       { value: "Private Institute" },
@@ -1756,74 +1390,11 @@ export const collegeDetailedData = [
       },
     ],
     Img: [
-      "https://images.shiksha.com/mediadata/images/1495098666phprcGCYY.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1532000081phpDzbUNw.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1532000199php8LIlS1.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1532000034php1SOBd5.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1532000842php2rmiig.jpeg",
-    ],
-    textReview: [
-      {
-        name: "John Doe",
-        rating: 4.5,
-        review:
-          "XYZ College offers a great learning environment with excellent faculty and modern campus facilities. The academic programs are well-structured, and the placement support is strong, helping students secure good opportunities.",
-      },
-      {
-        name: "Jane Smith",
-        rating: 4.0,
-        review:
-          "The college has a wonderful atmosphere, with experienced professors and a wide range of extracurricular activities. The campus is clean, but I wish there were more food options available.",
-      },
-      {
-        name: "Mike Johnson",
-        rating: 5.0,
-        review:
-          "I had an amazing experience at XYZ College. The faculty is very supportive, and the campus is equipped with all the necessary amenities for a comfortable learning experience. Highly recommend!",
-      },
-      {
-        name: "Sarah Lee",
-        rating: 3.5,
-        review:
-          "The academic structure is solid, but the campus could use some improvements in terms of infrastructure. Placement opportunities are decent, but I think more internships could be offered.",
-      },
-      {
-        name: "David Brown",
-        rating: 4.8,
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs.",
-      },
-    ],
-    videoReview: [
-      {
-        video: "review1.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review2.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review3.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review4.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review5.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
+      "colleges/BML_munjal_1.jpeg",
+      "colleges/BML_munjal_2.jpeg",
+      "colleges/BML_munjal_3.jpeg",
+      "colleges/BML_munjal_4.jpeg",
+      "colleges/BML_munjal_5.jpeg",
     ],
   },
 
@@ -1833,8 +1404,10 @@ export const collegeDetailedData = [
     rating: "4.4/5",
     type: "Private Institute",
     id: 9,
-    imageUrl:
-      "https://images.shiksha.com/mediadata/images/1728981992php3aEvDV.jpeg",
+    imageUrl: "colleges/delhi_school_cover.jpeg",
+    logo: "colleges/Delhi School of Business.png",
+
+    brochure: "brochure/9 DSBBrochure2023-25.pdf",
     highlights: [
       { value: "A++ NAAC accredited" },
       { value: "Private Institute" },
@@ -1982,74 +1555,11 @@ export const collegeDetailedData = [
       },
     ],
     Img: [
-      "https://images.shiksha.com/mediadata/images/1670313286phpDaaHSg.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1670313648phpRLfZH4.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1672830540php0ym9WG.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1670313635php7nm8qy.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1585571176phpVHr8KV.png",
-    ],
-    textReview: [
-      {
-        name: "John Doe",
-        rating: 4.5,
-        review:
-          "XYZ College offers a great learning environment with excellent faculty and modern campus facilities. The academic programs are well-structured, and the placement support is strong, helping students secure good opportunities.",
-      },
-      {
-        name: "Jane Smith",
-        rating: 4.0,
-        review:
-          "The college has a wonderful atmosphere, with experienced professors and a wide range of extracurricular activities. The campus is clean, but I wish there were more food options available.",
-      },
-      {
-        name: "Mike Johnson",
-        rating: 5.0,
-        review:
-          "I had an amazing experience at XYZ College. The faculty is very supportive, and the campus is equipped with all the necessary amenities for a comfortable learning experience. Highly recommend!",
-      },
-      {
-        name: "Sarah Lee",
-        rating: 3.5,
-        review:
-          "The academic structure is solid, but the campus could use some improvements in terms of infrastructure. Placement opportunities are decent, but I think more internships could be offered.",
-      },
-      {
-        name: "David Brown",
-        rating: 4.8,
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs.",
-      },
-    ],
-    videoReview: [
-      {
-        video: "review1.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review2.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review3.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review4.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review5.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
+      "colleges/delhi_school_1.jpeg",
+      "colleges/delhi_school_2.jpeg",
+      "colleges/delhi_school_3.jpeg",
+      "colleges/delhi_school_4.jpeg",
+      "colleges/delhi_school_5.jpeg",
     ],
   },
 
@@ -2059,8 +1569,9 @@ export const collegeDetailedData = [
     rating: "4.1/5",
     type: "Private Institute",
     id: 10,
-    imageUrl:
-      "https://images.shiksha.com/mediadata/images/1643348138phpw4TzEh.jpeg",
+    imageUrl: "colleges/bennett_cover.jpeg",
+    logo: "colleges/Bennett University.png",
+    brochure: "brochure/10 Bennett-Brochure.pdf",
     highlights: [{ value: "Private Institute" }, { value: "Estb. 2016" }],
     detailsHighlight: [
       {
@@ -2244,74 +1755,11 @@ export const collegeDetailedData = [
       },
     ],
     Img: [
-      "https://images.shiksha.com/mediadata/images/1515999879phpeHJtXV.png",
-
-      "https://images.shiksha.com/mediadata/images/1516000021phpN894Dw.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1516000058phpxLke8Y.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1548747244phpr5yDJs.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1549886934phpxhUa7N.jpeg",
-    ],
-    textReview: [
-      {
-        name: "John Doe",
-        rating: 4.5,
-        review:
-          "XYZ College offers a great learning environment with excellent faculty and modern campus facilities. The academic programs are well-structured, and the placement support is strong, helping students secure good opportunities.",
-      },
-      {
-        name: "Jane Smith",
-        rating: 4.0,
-        review:
-          "The college has a wonderful atmosphere, with experienced professors and a wide range of extracurricular activities. The campus is clean, but I wish there were more food options available.",
-      },
-      {
-        name: "Mike Johnson",
-        rating: 5.0,
-        review:
-          "I had an amazing experience at XYZ College. The faculty is very supportive, and the campus is equipped with all the necessary amenities for a comfortable learning experience. Highly recommend!",
-      },
-      {
-        name: "Sarah Lee",
-        rating: 3.5,
-        review:
-          "The academic structure is solid, but the campus could use some improvements in terms of infrastructure. Placement opportunities are decent, but I think more internships could be offered.",
-      },
-      {
-        name: "David Brown",
-        rating: 4.8,
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs.",
-      },
-    ],
-    videoReview: [
-      {
-        video: "review1.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review2.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review3.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review4.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review5.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
+      "colleges/bennett_1.jpeg",
+      "colleges/bennett_2.jpeg",
+      "colleges/bennett_3.jpeg",
+      "colleges/bennett_4.jpeg",
+      "colleges/bennett_5.png",
     ],
   },
 
@@ -2321,8 +1769,9 @@ export const collegeDetailedData = [
     rating: "3.9/5",
     type: "Private Institute",
     id: 11,
-    imageUrl:
-      "https://images.shiksha.com/mediadata/images/1728553680phpv1aFKR.jpeg",
+    imageUrl: "colleges/ITM_cover.jpeg",
+    logo: "colleges/ITM Business School.png",
+    brochure: "brochure/11 ITM.pdf",
     highlights: [{ value: "Private Institute" }, { value: "Estb. 1991" }],
 
     detailsHighlight: [
@@ -2464,74 +1913,11 @@ export const collegeDetailedData = [
       },
     ],
     Img: [
-      "https://images.shiksha.com/mediadata/images/1728553715phppHugfm.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1728553730phpp880iZ.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1728553744php4bDFzA.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1728553766phplabNql.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1728553787phpsVsF85.jpeg",
-    ],
-    textReview: [
-      {
-        name: "John Doe",
-        rating: 4.5,
-        review:
-          "XYZ College offers a great learning environment with excellent faculty and modern campus facilities. The academic programs are well-structured, and the placement support is strong, helping students secure good opportunities.",
-      },
-      {
-        name: "Jane Smith",
-        rating: 4.0,
-        review:
-          "The college has a wonderful atmosphere, with experienced professors and a wide range of extracurricular activities. The campus is clean, but I wish there were more food options available.",
-      },
-      {
-        name: "Mike Johnson",
-        rating: 5.0,
-        review:
-          "I had an amazing experience at XYZ College. The faculty is very supportive, and the campus is equipped with all the necessary amenities for a comfortable learning experience. Highly recommend!",
-      },
-      {
-        name: "Sarah Lee",
-        rating: 3.5,
-        review:
-          "The academic structure is solid, but the campus could use some improvements in terms of infrastructure. Placement opportunities are decent, but I think more internships could be offered.",
-      },
-      {
-        name: "David Brown",
-        rating: 4.8,
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs.",
-      },
-    ],
-    videoReview: [
-      {
-        video: "review1.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review2.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review3.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review4.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review5.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
+      "colleges/ITM_1.jpeg",
+      "colleges/ITM_2.jpeg",
+      "colleges/ITM_3.jpeg",
+      "colleges/ITM_4.jpeg",
+      "colleges/ITM_5.jpeg",
     ],
   },
 
@@ -2541,8 +1927,9 @@ export const collegeDetailedData = [
     rating: "3.7/5",
     type: "Private Institute",
     id: 12,
-    imageUrl:
-      "https://images.shiksha.com/mediadata/images/1578974775phprM1l29.png",
+    imageUrl: "colleges/IES_MARC_cover.png",
+    logo: "colleges/IES MCRC PG.png",
+    brochure: "brochure/12 IES.pdf",
     highlights: [{ value: "Private Institute" }, { value: "Estb. 1998" }],
     detailsHighlight: [
       {
@@ -2702,74 +2089,11 @@ export const collegeDetailedData = [
       },
     ],
     Img: [
-      "https://images.shiksha.com/mediadata/images/1677208586phpGcKUvI.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1573641026phpTYaa4X.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1573641071phpAhOnvR.png",
-
-      "https://images.shiksha.com/mediadata/images/1573641042phprwJBHE.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1573641012phporl8bn.jpeg",
-    ],
-    textReview: [
-      {
-        name: "John Doe",
-        rating: 4.5,
-        review:
-          "XYZ College offers a great learning environment with excellent faculty and modern campus facilities. The academic programs are well-structured, and the placement support is strong, helping students secure good opportunities.",
-      },
-      {
-        name: "Jane Smith",
-        rating: 4.0,
-        review:
-          "The college has a wonderful atmosphere, with experienced professors and a wide range of extracurricular activities. The campus is clean, but I wish there were more food options available.",
-      },
-      {
-        name: "Mike Johnson",
-        rating: 5.0,
-        review:
-          "I had an amazing experience at XYZ College. The faculty is very supportive, and the campus is equipped with all the necessary amenities for a comfortable learning experience. Highly recommend!",
-      },
-      {
-        name: "Sarah Lee",
-        rating: 3.5,
-        review:
-          "The academic structure is solid, but the campus could use some improvements in terms of infrastructure. Placement opportunities are decent, but I think more internships could be offered.",
-      },
-      {
-        name: "David Brown",
-        rating: 4.8,
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs.",
-      },
-    ],
-    videoReview: [
-      {
-        video: "review1.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review2.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review3.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review4.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review5.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
+      "colleges/IES_MARC_1.png",
+      "colleges/IES_MARC_2.jpeg",
+      "colleges/IES_MARC_3.jpeg",
+      "colleges/IES_MARC_4.jpeg",
+      "colleges/IES_MARC_5.jpeg",
     ],
   },
 
@@ -2779,8 +2103,9 @@ export const collegeDetailedData = [
     rating: "4.1/5",
     type: "Private Institute",
     id: 13,
-    imageUrl:
-      "https://images.shiksha.com/mediadata/images/1689250729phpbbEaFQ_1280x960.jpg",
+    imageUrl: "colleges/univarsal_ai_cover.jpeg",
+    logo: "colleges/Universal AI University.png",
+    brochure: "brochure/13 AI.pdf",
     highlights: [{ value: "Private Institute" }, { value: "Estb. 2009" }],
     detailsHighlight: [
       {
@@ -2925,74 +2250,11 @@ export const collegeDetailedData = [
       },
     ],
     Img: [
-      "https://images.shiksha.com/mediadata/images/1701752886php6fXqVH.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1701752855phpw9Dl6e.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1689314325phpkMwJka.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1689315742phpKs2L0u.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1689315887phpRGY7lS.jpeg",
-    ],
-    textReview: [
-      {
-        name: "John Doe",
-        rating: 4.5,
-        review:
-          "XYZ College offers a great learning environment with excellent faculty and modern campus facilities. The academic programs are well-structured, and the placement support is strong, helping students secure good opportunities.",
-      },
-      {
-        name: "Jane Smith",
-        rating: 4.0,
-        review:
-          "The college has a wonderful atmosphere, with experienced professors and a wide range of extracurricular activities. The campus is clean, but I wish there were more food options available.",
-      },
-      {
-        name: "Mike Johnson",
-        rating: 5.0,
-        review:
-          "I had an amazing experience at XYZ College. The faculty is very supportive, and the campus is equipped with all the necessary amenities for a comfortable learning experience. Highly recommend!",
-      },
-      {
-        name: "Sarah Lee",
-        rating: 3.5,
-        review:
-          "The academic structure is solid, but the campus could use some improvements in terms of infrastructure. Placement opportunities are decent, but I think more internships could be offered.",
-      },
-      {
-        name: "David Brown",
-        rating: 4.8,
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs.",
-      },
-    ],
-    videoReview: [
-      {
-        video: "review1.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review2.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review3.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review4.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review5.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
+      "colleges/univarsal_ai_1.jpeg",
+      "colleges/univarsal_ai_2.jpeg",
+      "colleges/univarsal_ai_3.jpeg",
+      "colleges/univarsal_ai_4.jpeg",
+      "colleges/univarsal_ai_5.jpeg",
     ],
   },
 
@@ -3002,8 +2264,9 @@ export const collegeDetailedData = [
     rating: "4.0/5",
     type: "Private Institute",
     id: 14,
-    imageUrl:
-      "https://images.shiksha.com/mediadata/images/1665844388phpqz8dwU_1280x960.jpg",
+    imageUrl: "colleges/fostiima_cover.jpeg",
+    logo: "colleges/FOSTIIMA Business School.png",
+    brochure: "brochure/14 fostima.pdf",
     highlights: [{ value: "Private Institute" }, { value: "Estb. 2007" }],
 
     detailsHighlight: [
@@ -3134,74 +2397,11 @@ export const collegeDetailedData = [
       },
     ],
     Img: [
-      "https://images.shiksha.com/mediadata/images/1732015126phpJ7fNL9.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1732015380php73c3C1.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1732014944phpuy86IT.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1732015657phpIpIJAv.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1732014977phpspKzWY.jpeg",
-    ],
-    textReview: [
-      {
-        name: "John Doe",
-        rating: 4.5,
-        review:
-          "XYZ College offers a great learning environment with excellent faculty and modern campus facilities. The academic programs are well-structured, and the placement support is strong, helping students secure good opportunities.",
-      },
-      {
-        name: "Jane Smith",
-        rating: 4.0,
-        review:
-          "The college has a wonderful atmosphere, with experienced professors and a wide range of extracurricular activities. The campus is clean, but I wish there were more food options available.",
-      },
-      {
-        name: "Mike Johnson",
-        rating: 5.0,
-        review:
-          "I had an amazing experience at XYZ College. The faculty is very supportive, and the campus is equipped with all the necessary amenities for a comfortable learning experience. Highly recommend!",
-      },
-      {
-        name: "Sarah Lee",
-        rating: 3.5,
-        review:
-          "The academic structure is solid, but the campus could use some improvements in terms of infrastructure. Placement opportunities are decent, but I think more internships could be offered.",
-      },
-      {
-        name: "David Brown",
-        rating: 4.8,
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs.",
-      },
-    ],
-    videoReview: [
-      {
-        video: "review1.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review2.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review3.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review4.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review5.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
+      "colleges/fostiima_1.jpeg",
+      "colleges/fostiima_2.jpeg",
+      "colleges/fostiima_3.jpeg",
+      "colleges/fostiima_4.jpeg",
+      "colleges/fostiima_5.jpeg",
     ],
   },
 
@@ -3211,8 +2411,9 @@ export const collegeDetailedData = [
     rating: "4.2/5",
     type: "Private Institute",
     id: 15,
-    imageUrl:
-      "https://images.shiksha.com/mediadata/images/1701233306phpPC9HoJ_1280x960.jpg",
+    imageUrl: "colleges/ABS_cover.jpeg",
+    logo: "colleges/Asian Business School (ABS).png",
+    brochure: "brochure/15 asian_business.pdf",
     highlights: [{ value: "Private Institute" }, { value: "Estb. 2011" }],
 
     detailsHighlight: [
@@ -3343,74 +2544,11 @@ export const collegeDetailedData = [
       },
     ],
     Img: [
-      "https://images.shiksha.com/mediadata/images/1730198037phpz8ixIk.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1730197955phpNjJcj3.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1489551495phpohevnA.png",
-
-      "https://images.shiksha.com/mediadata/images/1730199526phpBbZPyq.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1730199691phpZ0aKYj.jpeg",
-    ],
-    textReview: [
-      {
-        name: "John Doe",
-        rating: 4.5,
-        review:
-          "XYZ College offers a great learning environment with excellent faculty and modern campus facilities. The academic programs are well-structured, and the placement support is strong, helping students secure good opportunities.",
-      },
-      {
-        name: "Jane Smith",
-        rating: 4.0,
-        review:
-          "The college has a wonderful atmosphere, with experienced professors and a wide range of extracurricular activities. The campus is clean, but I wish there were more food options available.",
-      },
-      {
-        name: "Mike Johnson",
-        rating: 5.0,
-        review:
-          "I had an amazing experience at XYZ College. The faculty is very supportive, and the campus is equipped with all the necessary amenities for a comfortable learning experience. Highly recommend!",
-      },
-      {
-        name: "Sarah Lee",
-        rating: 3.5,
-        review:
-          "The academic structure is solid, but the campus could use some improvements in terms of infrastructure. Placement opportunities are decent, but I think more internships could be offered.",
-      },
-      {
-        name: "David Brown",
-        rating: 4.8,
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs.",
-      },
-    ],
-    videoReview: [
-      {
-        video: "review1.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review2.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review3.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review4.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review5.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
+      "colleges/ABS_1.jpeg",
+      "colleges/ABS_2.jpeg",
+      "colleges/ABS_3.jpeg",
+      "colleges/ABS_4.jpeg",
+      "colleges/ABS_5.png",
     ],
   },
 
@@ -3420,7 +2558,9 @@ export const collegeDetailedData = [
     rating: "4.4/5",
     type: "Private Institute",
     id: 16,
-    imageUrl: "https://images.shiksha.ws/public/images/instHeaderDesktop.jpg",
+    imageUrl: "colleges/iibs_cover.jpg",
+    logo: "colleges/IIBS (International Institute of Business Studies).png",
+    brochure: "brochure/16 IIBS MBA PGDM E-Brochure 2025-27.pdf",
     highlights: [
       { value: "A NAAC Accredited" },
       { value: "Private Institute" },
@@ -3584,66 +2724,7 @@ export const collegeDetailedData = [
         ans: "Candidates willing to get admission to various courses must apply online on the official website of the college. Follow the steps to apply for admission to various courses at IIBS Bangalore. The first step is to visit the official website of the International Institute of Business Studies. The next step is to click on the Apply Now tab. Then select the course. In the end, fill out and submit the complete application form.",
       },
     ],
-    Img: ["https://images.shiksha.ws/public/images/instHeaderDesktop.jpg"],
-    textReview: [
-      {
-        name: "John Doe",
-        rating: 4.5,
-        review:
-          "XYZ College offers a great learning environment with excellent faculty and modern campus facilities. The academic programs are well-structured, and the placement support is strong, helping students secure good opportunities.",
-      },
-      {
-        name: "Jane Smith",
-        rating: 4.0,
-        review:
-          "The college has a wonderful atmosphere, with experienced professors and a wide range of extracurricular activities. The campus is clean, but I wish there were more food options available.",
-      },
-      {
-        name: "Mike Johnson",
-        rating: 5.0,
-        review:
-          "I had an amazing experience at XYZ College. The faculty is very supportive, and the campus is equipped with all the necessary amenities for a comfortable learning experience. Highly recommend!",
-      },
-      {
-        name: "Sarah Lee",
-        rating: 3.5,
-        review:
-          "The academic structure is solid, but the campus could use some improvements in terms of infrastructure. Placement opportunities are decent, but I think more internships could be offered.",
-      },
-      {
-        name: "David Brown",
-        rating: 4.8,
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs.",
-      },
-    ],
-    videoReview: [
-      {
-        video: "review1.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review2.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review3.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review4.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review5.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-    ],
+    Img: ["colleges/iibs_cover.jpg"],
   },
 
   {
@@ -3652,8 +2733,9 @@ export const collegeDetailedData = [
     rating: "3.9/5",
     type: "Private Institute",
     id: 17,
-    imageUrl:
-      "https://images.shiksha.com/mediadata/images/1715752783phpBf1vNz_1280x960.jpg",
+    imageUrl: "colleges/Alliance_cover.jpeg",
+    logo: "colleges/Alliance University.png",
+    brochure: "brochure/17 alliance.pdf",
     highlights: [{ value: "Private Institute" }, { value: "Estb. 2010" }],
 
     detailsHighlight: [
@@ -3834,74 +2916,11 @@ export const collegeDetailedData = [
       },
     ],
     Img: [
-      "https://images.shiksha.com/mediadata/images/1715753494phpFt6EFK.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1736749091phpXVBokz.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1715754745phpkHfwPx.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1715754458phpWXTJrd.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1715754557phpKcYxYD.jpeg",
-    ],
-    textReview: [
-      {
-        name: "John Doe",
-        rating: 4.5,
-        review:
-          "XYZ College offers a great learning environment with excellent faculty and modern campus facilities. The academic programs are well-structured, and the placement support is strong, helping students secure good opportunities.",
-      },
-      {
-        name: "Jane Smith",
-        rating: 4.0,
-        review:
-          "The college has a wonderful atmosphere, with experienced professors and a wide range of extracurricular activities. The campus is clean, but I wish there were more food options available.",
-      },
-      {
-        name: "Mike Johnson",
-        rating: 5.0,
-        review:
-          "I had an amazing experience at XYZ College. The faculty is very supportive, and the campus is equipped with all the necessary amenities for a comfortable learning experience. Highly recommend!",
-      },
-      {
-        name: "Sarah Lee",
-        rating: 3.5,
-        review:
-          "The academic structure is solid, but the campus could use some improvements in terms of infrastructure. Placement opportunities are decent, but I think more internships could be offered.",
-      },
-      {
-        name: "David Brown",
-        rating: 4.8,
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs.",
-      },
-    ],
-    videoReview: [
-      {
-        video: "review1.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review2.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review3.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review4.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review5.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
+      "colleges/Alliance_1.jpeg",
+      "colleges/Alliance_2.jpeg",
+      "colleges/Alliance_3.jpeg",
+      "colleges/Alliance_4.jpeg",
+      "colleges/Alliance_5.jpeg",
     ],
   },
 
@@ -3911,8 +2930,9 @@ export const collegeDetailedData = [
     rating: "4.2/5",
     type: "Private Institute",
     id: 18,
-    imageUrl:
-      "https://images.shiksha.com/mediadata/images/1667281257phpQ4Dbi1_1280x960.jpg",
+    imageUrl: "colleges/ISBR_cover.jpeg",
+    logo: "colleges/ISBR Business School.png",
+    brochure: "brochure/18 ISBR Prospectus.pdf",
     highlights: [{ value: "Private Institute" }, { value: "Estb. 1990" }],
     detailsHighlight: [
       {
@@ -4052,74 +3072,11 @@ export const collegeDetailedData = [
       },
     ],
     Img: [
-      "https://images.shiksha.com/mediadata/images/1735195437phphsdy6n.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1735194278phpRLFr28.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1735194365phpC1vV2h.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1735194459phpQNYlDZ.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1735194489php3r8mun.jpeg",
-    ],
-    textReview: [
-      {
-        name: "John Doe",
-        rating: 4.5,
-        review:
-          "XYZ College offers a great learning environment with excellent faculty and modern campus facilities. The academic programs are well-structured, and the placement support is strong, helping students secure good opportunities.",
-      },
-      {
-        name: "Jane Smith",
-        rating: 4.0,
-        review:
-          "The college has a wonderful atmosphere, with experienced professors and a wide range of extracurricular activities. The campus is clean, but I wish there were more food options available.",
-      },
-      {
-        name: "Mike Johnson",
-        rating: 5.0,
-        review:
-          "I had an amazing experience at XYZ College. The faculty is very supportive, and the campus is equipped with all the necessary amenities for a comfortable learning experience. Highly recommend!",
-      },
-      {
-        name: "Sarah Lee",
-        rating: 3.5,
-        review:
-          "The academic structure is solid, but the campus could use some improvements in terms of infrastructure. Placement opportunities are decent, but I think more internships could be offered.",
-      },
-      {
-        name: "David Brown",
-        rating: 4.8,
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs.",
-      },
-    ],
-    videoReview: [
-      {
-        video: "review1.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review2.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review3.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review4.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review5.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
+      "colleges/ISBR_1.jpeg",
+      "colleges/ISBR_2.jpeg",
+      "colleges/ISBR_3.jpeg",
+      "colleges/ISBR_4.jpeg",
+      "colleges/ISBR_5.jpeg",
     ],
   },
 
@@ -4129,8 +3086,9 @@ export const collegeDetailedData = [
     rating: "4.2/5",
     type: "Private Institute",
     id: 19,
-    imageUrl:
-      "https://images.shiksha.com/mediadata/images/1732175028phpI5cvHy_1280x960.jpg",
+    imageUrl: "colleges/ISME_B_cover.jpeg",
+    logo: "colleges/ISME Bangalore.png",
+    brochure: "brochure/19  ISME_bangqalore.pdf",
     highlights: [{ value: "Private Institute" }, { value: "Estb. 2006" }],
 
     detailsHighlight: [
@@ -4300,74 +3258,11 @@ export const collegeDetailedData = [
       },
     ],
     Img: [
-      "https://images.shiksha.com/mediadata/images/1506573150phpN7ZO1e.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1704797849phpKGM5Q9.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1488347925phpl5j2ES.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1730096267phpUCL4u1.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1730096387phpTT9FCo.jpeg",
-    ],
-    textReview: [
-      {
-        name: "John Doe",
-        rating: 4.5,
-        review:
-          "XYZ College offers a great learning environment with excellent faculty and modern campus facilities. The academic programs are well-structured, and the placement support is strong, helping students secure good opportunities.",
-      },
-      {
-        name: "Jane Smith",
-        rating: 4.0,
-        review:
-          "The college has a wonderful atmosphere, with experienced professors and a wide range of extracurricular activities. The campus is clean, but I wish there were more food options available.",
-      },
-      {
-        name: "Mike Johnson",
-        rating: 5.0,
-        review:
-          "I had an amazing experience at XYZ College. The faculty is very supportive, and the campus is equipped with all the necessary amenities for a comfortable learning experience. Highly recommend!",
-      },
-      {
-        name: "Sarah Lee",
-        rating: 3.5,
-        review:
-          "The academic structure is solid, but the campus could use some improvements in terms of infrastructure. Placement opportunities are decent, but I think more internships could be offered.",
-      },
-      {
-        name: "David Brown",
-        rating: 4.8,
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs.",
-      },
-    ],
-    videoReview: [
-      {
-        video: "review1.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review2.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review3.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review4.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
-      {
-        video: "review5.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
-      },
+      "colleges/ISME_B_1.jpeg",
+      "colleges/ISME_B_2.jpeg",
+      "colleges/ISME_B_3.jpeg",
+      "colleges/ISME_B_4.jpeg",
+      "colleges/ISME_B_5.jpeg",
     ],
   },
 
@@ -4377,8 +3272,9 @@ export const collegeDetailedData = [
     rating: "3.9/5",
     type: "Private Institute",
     id: 20,
-    imageUrl:
-      "https://images.shiksha.com/mediadata/images/1672723520phpUsvj3H_1280x960.jpg",
+    imageUrl: "colleges/ATLAS_cover.jpeg",
+    logo: "colleges/ATLAS SkillTech University.png",
+    brochure: "brochure/20 ATLAS ISME MBA 2023-24 PLACEMENT BROCHURE.pdf",
     detailsHighlight: [
       {
         name: "ATLAS SkillTech University Highlights 2025",
@@ -4539,74 +3435,324 @@ export const collegeDetailedData = [
       },
     ],
     Img: [
-      "https://images.shiksha.com/mediadata/images/1676615960phpuzGyQ7.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1676616244php1KyJCy.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1676616292phpVCpW4z.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1676616863phpCATLQH.jpeg",
-
-      "https://images.shiksha.com/mediadata/images/1676615657php0wyM9M.jpeg",
+      "colleges/ATLAS_1.jpeg",
+      "colleges/ATLAS_2.jpeg",
+      "colleges/ATLAS_3.jpeg",
+      "colleges/ATLAS_4.jpeg",
+      "colleges/ATLAS_5.jpeg",
     ],
-    textReview: [
+  },
+
+  // new added data
+  {
+    name: "Jagdish Sheth School of Management",
+    location: " Electronic City,  Bangalore",
+    rating: "4.1/5",
+    type: "Private Institute",
+    id: 21,
+    highlights: [{ value: "Private Institute" }, { value: "Estb. 1995" }],
+    imageUrl: "colleges/JG_B_cover.jpg",
+    brochure: "brochure/21 JAGSoM Brochure 2025.pdf",
+    detailsHighlight: [
       {
-        name: "John Doe",
-        rating: 4.5,
-        review:
-          "XYZ College offers a great learning environment with excellent faculty and modern campus facilities. The academic programs are well-structured, and the placement support is strong, helping students secure good opportunities.",
-      },
-      {
-        name: "Jane Smith",
-        rating: 4.0,
-        review:
-          "The college has a wonderful atmosphere, with experienced professors and a wide range of extracurricular activities. The campus is clean, but I wish there were more food options available.",
-      },
-      {
-        name: "Mike Johnson",
-        rating: 5.0,
-        review:
-          "I had an amazing experience at XYZ College. The faculty is very supportive, and the campus is equipped with all the necessary amenities for a comfortable learning experience. Highly recommend!",
-      },
-      {
-        name: "Sarah Lee",
-        rating: 3.5,
-        review:
-          "The academic structure is solid, but the campus could use some improvements in terms of infrastructure. Placement opportunities are decent, but I think more internships could be offered.",
-      },
-      {
-        name: "David Brown",
-        rating: 4.8,
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs.",
+        name: "Jagdish Sheth School of Management Highlights 2025",
+        desc: "Jagdish Sheth School of Management (JAGSOM), established as IFIM Business School in 1995, has a strong legacy of innovative and globally recognised business education. Rebranded in 2020 to honor renowned global scholar Professor Jagdish Sheth, JAGSOM is one of only 15 AACSB-accredited business schools in India that feature prominently in the QS Global Rankings. The college is guided by a global Board of Governors and a Board of Studies, composed of leaders from academia, industry, and social sectors. Jagdish Sheth School of Management is accredited by AACSB, SAQS, and NBA, and is approved by AICTE and AIU.",
+        highlightsTable: {
+          heading: [
+            {
+              label: "Particulars",
+              value: "JAGSOM Highlights 2025",
+            },
+          ],
+          data: [
+            { label: "Establishment year", value: "1995" },
+            { label: "Ownership type", value: "Private" },
+            { label: "Campus size", value: "2-acre" },
+            { label: "Top accreditations", value: "AACSB, SAQS, NBA" },
+            { label: "Recognised by", value: "AICTE, AIU" },
+            { label: "Flagship course", value: "MBA" },
+          ],
+        },
       },
     ],
-    videoReview: [
+    courseInfo: [
       {
-        video: "review1.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
+        name: "Jagdish Sheth School of Management (JAGSoM) Courses and Fees 2025",
+        desc: "The Jagdish Sheth School of Management (JAGSoM) fee structure is cumulative of multiple components, such as tuition fees, admission/registration fees, refundable deposits, etc. Candidates have to pay the fee or prescribed admission fee for seat confirmation. Mentioned below is the Jagdish Sheth School of Management (JAGSoM) fees breakup for the offered programme:",
+        heading: [
+          {
+            labelOne: "Courses",
+            labelTwo: "Tuition Fees",
+            labelThree: "Eligibility",
+          },
+        ],
+        data: [
+          {
+            labelOne: "MBA/PGDM",
+            labelTwo: "  10 L - 16 L",
+            labelThree: [
+              { eligibility: "Graduation : 50 %" },
+              { exam: " Exams : XAT , CAT" },
+            ],
+          },
+        ],
+      },
+    ],
+    feesInfo: {
+      name: "Fees Overview",
+      highlightsHeading: [
+        { labelOne: "Courses", labelTwo: "Total tuition fees" },
+      ],
+      highlights: [{ labelOne: "MBA/PGDM", labelTwo: "  14 L - 16.5 L" }],
+    },
+    admissionInfo: [
+      {
+        name: "Jagdish Sheth School of Management (JAGSoM) Admission Process 2025",
+        desc: "Jagdish Sheth School of Management (JAGSoM) admission 2025 is completely based on entrance exam scores. Jagdish Sheth School of Management (JAGSoM) Bangalore offers full-time MBA/PGDM courses in several specialisations. For JAGSoM admission, candidates can fill up the form available on the official website to secure admission via a valid score in one of the XAT, CAT, MAT, CMAT or GMAT entrance exams. The final selection is entirely based on JAGSoM Management Aptitude Test (JAGMAT), Group Exercise (GE), and Personal Interview (PI), along with a candidate’s academic scores and work experience.",
+        highlightsHeading: [
+          {
+            labelOne: "Course Name",
+            labelTwo: "Eligibility",
+            labelThree: "Selection Criteria",
+          },
+        ],
+        highlights: [
+          {
+            labelOne: "PGDM",
+            labelTwo: "	UG degree with 50% aggregate",
+            labelThree:
+              "CAT/ XAT/ GMAT/ (Only for International MBA) + JAGMAT + Group Exercise + PI",
+          },
+          {
+            labelOne: "PGDM Analytics and Digital Business Major",
+            labelTwo: "UG degree with 50% aggregate",
+            labelThree:
+              "CAT/ XAT/ NMAT/ MAT/ CMAT/ ATMA/ PGCET/ SNAP or JAGMAT + Group Exercise + PI",
+          },
+          {
+            labelOne: "PGDM in Finance Major",
+            labelTwo: "UG degree with 50% aggregate",
+            labelThree:
+              "CAT/ XAT/ NMAT/ MAT/ CMAT/ ATMA/ PGCET/ SNAP or JAGMAT + Group Exercise + PI",
+          },
+          {
+            labelOne: "PGDM in Marketing Major",
+            labelTwo: "UG degree with 50% aggregate",
+            labelThree:
+              "CAT/ XAT/ NMAT/ MAT/ CMAT/ ATMA/ PGCET/ SNAP or JAGMAT + Group Exercise + PI",
+          },
+          {
+            labelOne: "PGDM (International Business)",
+            labelTwo: "UG degree with 50% aggregate",
+            labelThree:
+              "CAT/ XAT/ NMAT/ MAT/ CMAT/ ATMA/ GMAT or JAGMAT + Group Exercise + PI",
+          },
+        ],
+      },
+    ],
+    placementInfo: [
+      {
+        name: "Jagdish Sheth School of Management (JAGSOM) Placements 2024: Top Recruiters",
+        desc: "Some of the eminent companies that were part of Jagdish Sheth School of Management (JAGSOM) in 2024 placements are mentioned in the table below:",
+        recruiters: [
+          "Wipro",
+          "Codeyoung",
+          "Digit",
+          "Bosch",
+          "Hexaware Technologies",
+          "Ola",
+          "HSBC",
+          "Porter",
+          "Bectran",
+          "Quess",
+          "HDFC Bank",
+          "Equiniti",
+        ],
+      },
+    ],
+    FAQ: [
+      {
+        question: "Is MBA available at Jagdish Sheth School of Management?",
+        ans: "Yes, JAGSoM offers PGDM i.e., equivalent to MBA courses. The institute offers postgraduate diplomas in Management in various specialisations, such as Finance, Business Analytics, Human Resource etc. Additionally, the institute also offers a general PGDM course and International PGDM course in International Business with their global partners in the USA and France. The basic eligibility criteria to get admission into these courses require candidates to complete their bachelor's degree with at least an aggregate of 50%. For the selection process, JAGSoM valid scores of any of these entrance examinations MAT/ XAT/ CAT/ CMAT/ JAGMAT.",
       },
       {
-        video: "review2.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
+        question: "Is it worth pursuing MBA at JAGSOM?",
+        ans: "Yes, it is worth pursuing an MBA at Jagdish Sheth School of Management (JAGSOM) as it is amongst the 12 leading Indian B-schools which has AACSB accreditation and features in the QS World University Global Rankings 2023. The college has also been accredited by AACSB, SAQS, and NBA, and is approved by AICTE and AIU.",
       },
       {
-        video: "review3.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
+        question: "Which MBA specialisations does JAGSoM offer?",
+        ans: "JAGSoM offers a PG-level PGDM (General) course for a duration of two years. At JAGSoM, students get an option to study PGDM courses in combination with a major in Marketing, Finance, HRM, Analytics & Digital Business. This flexibility is given to students who want to pursue a career in General Management. Apart from this, the institute offers PGDM courses across three other specialisations. These are Marketing, Finance and Analytics & Digital Business.",
       },
       {
-        video: "review4.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
+        question: "How are MBA placements at IFIM College? ",
+        ans: "IFIM Business School is renowned for its strong MBA placements, consistently achieving high placement rates with reputable companies. The institute's placement process involves industry interaction sessions, pre-placement talks, and on-campus interviews. The dedicated placement cell at IFIM works diligently to connect students with prospective employers, facilitating meaningful career opportunities. The average and the highest salary packages vary based on specializations and industries. IFIM's emphasis on industry relevance ensures that students are well-prepared for the dynamic job market. For the latest and most accurate information on MBA placements, referring to the college's official placement reports or contacting the placement cell directly is recommended. These reports typically include details on placement percentages, average salaries, and the names of recruiting companies.",
       },
       {
-        video: "review5.mp4",
-        review:
-          "XYZ College provides an enriching environment with great faculty and a variety of courses. The campus is well-maintained, and the placement cell has helped many students land great jobs",
+        question:
+          "Which college provides a better median salary for MBA/PGDM: Jagdish Sheth School of Management (JAGSoM) or Christ University?",
+        ans: "The median salary package offered to the students after finishing MBA/PGDM from Jagdish Sheth School of Management (JAGSoM) is INR 1,097,818. While, the Median package offered by Christ University after completion of MBA/PGDM is INR 797,000. Basis these stats, Jagdish Sheth School of Management (JAGSoM) is better option compared to Christ University on the Median salary parameter.",
       },
+    ],
+    Img: [
+      "colleges/JG_B_1.jpeg",
+
+      "colleges/JG_B_2.jpeg",
+
+      "colleges/JG_B_3.jpeg",
+
+      "colleges/JG_B_4.jpeg",
+
+      "colleges/JG_B_5.jpeg",
+    ],
+  },
+
+  {
+    name: "Jagdish Sheth School of Management",
+    location: "Karjat, Mumbai",
+    type: "Private Institute",
+    id: 22,
+    highlights: [{ value: "Private Institute" }],
+    brochure: "brochure/21 JAGSoM Brochure 2025.pdf",
+    imageUrl: "colleges/JG_M_cover.jpeg",
+    detailsHighlight: [
+      {
+        name: "Jagdish Sheth School of Management (JAGSoM Mumbai) Highlights 2024",
+        desc: "Jagdish Sheth School of Management (JAGSoM Mumbai) is situated in Mumbai, a distinguished business school under Vijaybhoomi University, is dedicated to excellence in education, research, and innovation. It is one of the first six Business Schools in India to be awarded AACSB, NBA and SAQS accreditation. The shool is also approved by the AICTE. The school is also recognised by the UGC. In addition, JAGSoM has earned global recognition in the QS Masters Rankings, a testament to the quality and impact of our programs on the international stage. Through our innovative curriculum, distinguished faculty, and transformative learning experiences, we empower students to excel in their chosen fields and make a positive difference in society.",
+        highlightsTable: {
+          heading: [
+            {
+              label: "Particulars",
+              value: "JAGSOM Highlights 2025",
+            },
+          ],
+          data: [
+            { label: "Ownership type", value: "Private" },
+            { label: "Accredited by", value: "AACSB" },
+            { label: "Location", value: "Karjat, Maharashtra" },
+            { label: "Also known as", value: "JAGSOM" },
+            { label: "Flagship course", value: "MBA" },
+          ],
+        },
+      },
+    ],
+    courseInfo: [
+      {
+        name: "Jagdish Sheth School of Management, Mumbai Courses & Fees 2025",
+        desc: "Jagdish Sheth School of Management (JAGSoM) JAGSoMoffers three management courses at the Undergraduate and Postgraduate levels. JAGSoM Mumbai courses admissions are entrance-based. For admission to the Dual-degree MBA course, candidates need to appear for any of the national-level entrance exams accepted by JAGSoM. Additionally, the aspirants also need to appear for JAGMAT to become eligible for admission.",
+        heading: [
+          {
+            labelOne: "Courses",
+            labelTwo: "Tuition Fees",
+            labelThree: "Eligibility",
+          },
+        ],
+        data: [
+          {
+            labelOne: "MBA/PGDM",
+            labelTwo: "  10 L - 22 L",
+            labelThree: [
+              { eligibility: "10+2 : 50 % , Graduation : 50 % " },
+              { exam: " Exams : MAH CETMAT" },
+            ],
+          },
+          {
+            labelOne: "BBA",
+            labelTwo: "13.5 L - 22 L",
+            labelThree: [
+              { eligibility: "10+2 : 50 % " },
+              { exam: "Exams : CUETIPMAT" },
+            ],
+          },
+        ],
+      },
+    ],
+    feesInfo: {
+      name: "Fees Overview",
+      highlightsHeading: [
+        { labelOne: "Courses", labelTwo: "Total tuition fees" },
+      ],
+      highlights: [
+        { labelOne: "MBA/PGDM", labelTwo: "  10 L - 22 L" },
+        { labelOne: "BBA", labelTwo: "  13.5 L - 22 L" },
+      ],
+    },
+    admissionInfo: [
+      {
+        name: "Jagdish Sheth School of Management (JAGSoM Mumbai) Admission Process 2025",
+        desc: "Jagdish Sheth School of Management (JAGSoM) is one of the first six business schools in India to be awarded AACSB accreditation. The school is also approved by the UGC. JAGSoM Mumbai is one of the schools of Vijaybhoomi University and offers BBA, MBA programmes at the UG and PG level, respectively. JAGSoM has been ranked 26th across India, 14th in Learning experience, 13th private B-school across India and 10th in Future Orientation, by Business Today- MDRA Business Ranking, India’s best business school ranking 2022. A few highlights regarding JAGSoM Mumbai are mentioned in the table below:",
+        highlightsHeading: [
+          {
+            labelOne: "Course Name",
+            labelTwo: "Eligibility",
+            labelThree: "Selection Criteria",
+          },
+        ],
+        highlights: [
+          {
+            labelOne: "MBA",
+            labelTwo:
+              "- Candidates need to meet the eligibility of CAT/ XAT/ GMAT/ NMAT/ MHCET/ MAT/ CMAT MBA and must have a valid score of the same - IELTS/ TOEFL",
+            labelThree:
+              "JAGMAT+ Group Exercise+ Two rounds of Personal Interview",
+          },
+          {
+            labelOne: "BBA",
+            labelTwo:
+              "	Class 12 or equivalent with a minimum of 50% marks for the General/ OBC category and 40% for the SC/ST category.",
+            labelThree: "VUSAT+ Personal Interview",
+          },
+        ],
+      },
+    ],
+    // placementInfo: [
+    //   {
+    //     name: "Jagdish Sheth School of Management (JAGSOM) Placements 2024: Top Recruiters",
+    //     desc: "Some of the eminent companies that were part of Jagdish Sheth School of Management (JAGSOM) in 2024 placements are mentioned in the table below:",
+    //     recruiters: [
+    //       "Wipro",
+    //       "Codeyoung",
+    //       "Digit",
+    //       "Bosch",
+    //       "Hexaware Technologies",
+    //       "Ola",
+    //       "HSBC",
+    //       "Porter",
+    //       "Bectran",
+    //       "Quess",
+    //       "HDFC Bank",
+    //       "Equiniti"
+    //     ],
+    //   },
+    // ],
+    FAQ: [
+      {
+        question: "How many seats are there in JAGSoM?",
+        ans: "The total seat intake of JAGSoM Mumbai MBA (1 year in JAGSoM, Greater Mumbai + 1 year in JAGSoM, Bangalore) is 60. The seat intake for MBA (1 year in JAGSoM, Greater Mumbai + 1 year in Partner Business School (SUNY, KEDGE or University of Texas, Arlington) is not specified.",
+      },
+      {
+        question: "Is JAGSoM worth joining?",
+        ans: " Jagdish Sheth School of Management (JAGSoM) is amongst the first 6 business schools in India to be awarded the AACSB accreditation also has a branch in Mumbai. The school is also approved by the UGC. It is one of the schools of Vijaybhoomi University and offers BBA, MBA courses and Integrated MBA at the UG and PG level, respectively. JAGSoM has been ranked 26th across India, 14th in Learning experience, 13th private B-school across India and 10th in Future Orientation, by Business Today- MDRA Business Ranking, India’s best business school ranking 2022. ",
+      },
+      {
+        question: "How is the campus of JAGSoM Mumbai?",
+        ans: "Jagdish Sheth School of Management Mumbai campus houses modern classrooms, well-stocked library, cafeteria, sports and medical facilities and conference hall. In addition to this, JAGSoM Mumbai also offers hostel facilities for girls and boys.",
+      },
+      {
+        question:
+          " Is pursuing BBA at Jagdish Sheth School of Management expensive? ",
+        ans: "Yes, pursuing BBA at Jagdish Sheth School of Management is expensive as it costs INR 16 Lacs for BBA honours. Hostel fees has to be paid additionally. So, it is expensive but most of the top business schools charges more as they offers more placements, internships, etc.",
+      },
+      {
+        question: "Which MBA specialisations does JAGSoM offer?",
+        ans: "JAGSoM offers a PG-level PGDM (General) course for a duration of two years. At JAGSoM, students get an option to study PGDM courses in combination with a major in Marketing, Finance, HRM, Analytics & Digital Business. This flexibility is given to students who want to pursue a career in General Management. Apart from this, the institute offers PGDM courses across three other specialisations. These are Marketing, Finance and Analytics & Digital Business.",
+      },
+    ],
+    Img: [
+      "colleges/JG_M_1.jpeg",
+      "colleges/JG_M_2.jpeg",
+      "colleges/JG_M_3.jpeg",
+      "colleges/JG_M_4.jpeg",
+      "colleges/JG_M_5.jpeg",
     ],
   },
 ];

@@ -72,15 +72,11 @@ const Header = () => {
   return (
     <>
       <header className="z-30 fixed top-0 w-full xl:px-32 flex justify-between shadow-md items-center p-4 h-26 bg-white text-black">
-       <Link to={"/"}>
-        <div className="h-24">
-          <img
-            className="h-24 "
-            src={logo_main}
-            alt="campus updates logo"
-            />
-        </div>
-            </Link>
+        <Link to={"/"}>
+          <div className="h-24">
+            <img className="h-24 " src={logo_main} alt="campus updates logo" />
+          </div>
+        </Link>
         <div className="flex md:w-4/5 w-1/2 md:justify-end justify-center items-center lg:gap-10 gap-3.5">
           <div className="w-full md:w-[30%] hidden relative sm:flex justify-between bg-transparent border border-slate-300 rounded-full h-8">
             <input
@@ -164,8 +160,6 @@ const Header = () => {
               </li>
             </NavLink>
           </ul>
-
-         
         </div>
 
         <RxHamburgerMenu
@@ -189,12 +183,12 @@ const Header = () => {
       >
         <div className="flex justify-between items-center p-4 border-b">
           <Link to={"/"}>
-          <img
-            className="h-12 rounded-full"
-            src={logo_main}
-            alt="campus updates logo"
+            <img
+              className="h-12 rounded-full"
+              src={logo_main}
+              alt="campus updates logo"
             />
-            </Link>
+          </Link>
           <RxCross2
             className="text-2xl cursor-pointer text-black"
             onClick={toggleSidebar}
@@ -271,7 +265,7 @@ const Header = () => {
                 setIsSidebarOpen(false);
               }}
             >
-              Collages
+              Colleges
             </li>
           </NavLink>
           <li

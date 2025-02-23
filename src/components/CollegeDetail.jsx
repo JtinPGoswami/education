@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 import { BsStarFill } from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
-
 const CollegeDetail = ({ college }) => {
+   console.log(college.brochure);
    
   return (
     <section className="mt-8 border border-gray-300 rounded-xl overflow-hidden  w-full  ">
@@ -27,6 +27,13 @@ const CollegeDetail = ({ college }) => {
             <p className="sm:text-base text-sm">{college.rating}</p>
           </div>
           <div className="sm:flex grid grid-cols-2 gap-2 items-center flex-wrap">
+            {college.brochure&&<a
+              href={college.brochure}
+             download={college.brochure}
+              className="bg-green-500 text-white px-2 py-1 rounded"
+            >
+            Download Brochure
+            </a>}
             {college.highlights?.map((item, index) => (
               <span
                 key={index}

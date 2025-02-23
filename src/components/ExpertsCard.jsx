@@ -3,8 +3,10 @@ import Ankit from "../assets/Experts/AnkitPanday.jpeg";
 import Dhiresh from "../assets/Experts/DhireshSingh.jpeg";
 import Garun from "../assets/Experts/GarunBhadoria.jpeg";
 import Khushi from "../assets/Experts/KhushiMaheshwari.jpeg";
+import Mohit from "../assets/Experts/Mohit.jpeg";
 import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
+
 const ExpertsCard = () => {
   const profiles = [
     {
@@ -13,6 +15,7 @@ const ExpertsCard = () => {
       education: "B.com, LLB",
       experties: "Legal & Compliance, Business Stategy Development",
       img: Khushi,
+      Linkedin:"https://www.linkedin.com/in/khushi-jhawar-761583213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
       name: "Dr Garun Bhadoria",
@@ -36,6 +39,15 @@ const ExpertsCard = () => {
       "Market Research & Analytics, Process Optimization & Efficiency, Project Management, Quality Control & Compliance",
       img: Ankit,
       Linkedin: "https://www.linkedin.com/in/ankit-pandey-740a72327/",
+    },
+    {
+      name: " Mohit Gangrade",
+      email: "mohitgangrade3002@gmail.com ",
+      education: "PGDM ",
+      experties:
+      "Cross-Industry experience,Collaborative Leadership ,Strategic Management ,Global Business Acumen",
+      img: Mohit,
+      Linkedin: "https://www.linkedin.com/in/mohit-gangrade-236191197?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
   ];
   
