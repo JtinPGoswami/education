@@ -150,6 +150,7 @@ const Fees = ({ feesInfo }) => {
           </tbody>
         </table>
       </div>
+      {feesInfo.courseTotalFee&&<>
       <div className="mt-10">
         <h1 className="text-xl font-bold text-gray-700 mb-5">Top Course Fee</h1>
         <h1 className="text-lg font-bold text-gray-600">
@@ -185,15 +186,19 @@ const Fees = ({ feesInfo }) => {
           </tbody>
         </table>
       </div>
+      </>
+          }
     </div>
   );
 };
 
 const Admissions = ({ admissionInfo }) => {
+  if (!admissionInfo || Object.keys(admissionInfo).length === 0) return null; // Hide if no data
+
   return (
     <div>
       <div className="mt-6 p-4 border border-gray-300 rounded-xl">
-        {/* heading & desc */}
+        {/* Heading & Description */}
         <div>
           <h1 className="text-2xl font-bold text-green-500">
             {admissionInfo.name}
@@ -201,51 +206,55 @@ const Admissions = ({ admissionInfo }) => {
           <p className="text-gray-700 font-medium mt-6">{admissionInfo.desc}</p>
         </div>
 
-        {/* table */}
-        <div className="mt-8">
-          <table className="w-full border-collapse border border-gray-300">
-            <thead>
-              {admissionInfo.highlightsHeading.map((item, index) => (
-                <tr
-                  key={index}
-                  className="bg-gray-100 text-gray-700 text-left border border-gray-300  p-4"
-                >
-                  <th className="border border-gray-300 p-4">
-                    {item.labelOne}
-                  </th>
-                  <th className="border border-gray-300 p-4">
-                    {item.labelTwo}
-                  </th>
-                  <th className="border border-gray-300 p-4">
-                    {item.labelThree}
-                  </th>
-                </tr>
-              ))}
-            </thead>
-            <tbody>
-              {admissionInfo.highlights.map((item, index) => (
-                <tr
-                  key={index}
-                  className="border border-gray-300 text-gray-700  "
-                >
-                  <td className="border border-gray-300 p-4  font-semibold">
-                    {item.labelOne}
-                  </td>
-                  <td className="border border-gray-300 p-4 ">
-                    {item.labelTwo}
-                  </td>
-                  <td className="border border-gray-300 p-4 ">
-                    {item.labelThree}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        {/* Table */}
+        {admissionInfo.highlightsHeading?.length > 0 &&
+        admissionInfo.highlights?.length > 0 ? (
+          <div className="mt-8">
+            <table className="w-full border-collapse border border-gray-300">
+              <thead>
+                {admissionInfo.highlightsHeading.map((item, index) => (
+                  <tr
+                    key={index}
+                    className="bg-gray-100 text-gray-700 text-left border border-gray-300  p-4"
+                  >
+                    <th className="border border-gray-300 p-4">
+                      {item.labelOne}
+                    </th>
+                    <th className="border border-gray-300 p-4">
+                      {item.labelTwo}
+                    </th>
+                    <th className="border border-gray-300 p-4">
+                      {item.labelThree}
+                    </th>
+                  </tr>
+                ))}
+              </thead>
+              <tbody>
+                {admissionInfo.highlights.map((item, index) => (
+                  <tr
+                    key={index}
+                    className="border border-gray-300 text-gray-700"
+                  >
+                    <td className="border border-gray-300 p-4 font-semibold">
+                      {item.labelOne}
+                    </td>
+                    <td className="border border-gray-300 p-4">
+                      {item.labelTwo}
+                    </td>
+                    <td className="border border-gray-300 p-4">
+                      {item.labelThree}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ) : null}
       </div>
     </div>
   );
 };
+
 
 const Placements = ({ placementInfo }) => {
   return (

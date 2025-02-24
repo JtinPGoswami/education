@@ -120,7 +120,7 @@ const HomePage = () => {
       </section>
       <section>
         <div className="w-[95%] mx-auto sm:p-20 p-4 text-2xl font-thin text-white rounded-md  bg-[#77d693e1] hover:bg-[#77d693] mt-10">
-          <p>
+          <p className="sm:text-base text-sm">
             Welcome to Campus Updates – the trusted platform that helps aspiring
             MBA students, law, engineering, and medical aspirants make informed
             decisions about their post-graduation education. Whether you're a
@@ -139,12 +139,12 @@ const HomePage = () => {
       <div className="w-full px-[5%] mx-auto  my-10 space-y-7   text-center ">
         <div className="flex justify-between items-center md:flex-row flex-col-reverse">
           <div className="md:w-1/2 w-full">
-            <h1 className="text-black mb-5 text-4xl font-bold ">
+            <h1 className="text-black mb-5 sm:text-4xl text-xl  font-bold ">
               {" "}
               About
               <span className="text-[#5FCF80]"> Campus Updates</span>
             </h1>
-            <p className="text-2xl font-normal text-start mt-5">
+            <p className="sm:text-2xl text-base font-normal text-start mt-5">
               At Campus Updates, we empower students to make confident, informed
               decisions about their education. Whether you're seeking an MBA,
               law, engineering, or medical degree, we provide comprehensive
@@ -210,13 +210,7 @@ const HomePage = () => {
                 exams, eligibility, and application procedures.
               </li>
             </ul>
-            <div className="md:text-left text-center mt-10">
-              <Link to={"/college"}>
-                <button className="md:w-auto w-4/5 px-8  bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition text-lg">
-                  Browse College Profiles
-                </button>
-              </Link>
-            </div>
+            
           </div>
           <div></div>
           <div className="md:w-1/2 w-full h-full flex justify-center items-center ">
@@ -234,6 +228,13 @@ const HomePage = () => {
             <CollegeCard key={idx} college={college} />
           ))}
         </div>
+        <div className="md:text-left text-center mt-10">
+              <Link to={"/college"}>
+                <button className="md:w-auto w-4/5 px-8  bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition text-lg">
+                  Browse College Profiles
+                </button>
+              </Link>
+            </div>
       </div>
       <hr className="my-10 border-2 text-[#3f3b3b6b] "></hr>
       {/* events section */}

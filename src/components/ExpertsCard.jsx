@@ -1,7 +1,7 @@
 import React from "react";
 import Ankit from "../assets/Experts/AnkitPanday.jpeg";
 import Dhiresh from "../assets/Experts/DhireshSingh.jpeg";
-import Garun from "../assets/Experts/GarunBhadoria.jpeg";
+import Garun from "../assets/Experts/GarunBhadoria.png";
 import Khushi from "../assets/Experts/KhushiMaheshwari.jpeg";
 import Mohit from "../assets/Experts/Mohit.jpeg";
 import { FaLinkedin } from "react-icons/fa";

@@ -6,8 +6,6 @@ import {
   Courses,
   Fees,
   Placements,
-  TextReview,
-  VideoReview,
 } from "../components/CollegeInformations";
 import { useCollege } from "../context/CollegeContext";
 import FaqSection from "../components/Faqsection";
@@ -44,26 +42,29 @@ const CollegeDetailPage = () => {
 
       {/* tabs */}
       <section className="px-4">
-        <div className="flex md:gap-8 flex-wrap gap-3 py-4 mt-6 px-4 border border-gray-300 rounded-xl">
-          {[
-            "College Info",
-            "Courses",
-            "Fees",
-            "Admissions",
-            "Placements",
-          ].map((tab) => (
-            <button
-              key={tab}
-              className={`text-gray-600 hover:text-green-500 cursor-pointer font-medium ${
-                activeTab === tab ? "text-green-500" : ""
-              }`}
-              onClick={() => setActiveTab(tab)}
-            >
-              {tab}
-            </button>
-          ))}
-        </div>
-      </section>
+  <div className="flex md:gap-8 flex-wrap gap-3 py-4 mt-6 px-4 border border-gray-300 rounded-xl">
+    {[
+      { label: "College Info", key: "detailsHighlight" },
+      { label: "Courses", key: "courseInfo" },
+      { label: "Fees", key: "feesInfo" },
+      { label: "Admissions", key: "admissionInfo" },
+      { label: "Placements", key: "placementInfo" },
+    ]
+      .filter(({ key }) => selectedCollege[key]) // Show only if data exists
+      .map(({ label }) => (
+        <button
+          key={label}
+          className={`text-gray-600 hover:text-green-500 cursor-pointer font-medium ${
+            activeTab === label ? "text-green-500" : ""
+          }`}
+          onClick={() => setActiveTab(label)}
+        >
+          {label}
+        </button>
+      ))}
+  </div>
+</section>
+
 
       {activeTab === "College Info" && (
         <div className="px-4 ">
