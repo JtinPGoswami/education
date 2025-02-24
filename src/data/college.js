@@ -3452,6 +3452,7 @@ export const collegeDetailedData = [
     id: 21,
     highlights: [{ value: "Private Institute" }, { value: "Estb. 1995" }],
     imageUrl: "colleges/JG_B_cover.jpg",
+    logo: "colleges/JG_logo.jpeg",
     brochure: "brochure/21 JAGSoM Brochure 2025.pdf",
     detailsHighlight: [
       {
@@ -3614,6 +3615,7 @@ export const collegeDetailedData = [
     highlights: [{ value: "Private Institute" }],
     brochure: "brochure/21 JAGSoM Brochure 2025.pdf",
     imageUrl: "colleges/JG_M_cover.jpeg",
+    logo: "colleges/JG_logo.jpeg",
     detailsHighlight: [
       {
         name: "Jagdish Sheth School of Management (JAGSoM Mumbai) Highlights 2024",

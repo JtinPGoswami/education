@@ -30,7 +30,7 @@ const CollegeDetail = ({ college }) => {
             {college.brochure&&<a
               href={college.brochure}
              download={college.brochure}
-              className="bg-green-500 text-white px-2 py-1 rounded"
+              className={` bg-green-500 text-center text-white    px-2 py-1 rounded ${college.highlights.length > 1? "col-span-2" : ""}`}
             >
             Download Brochure
             </a>}
