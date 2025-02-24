@@ -11,9 +11,16 @@ const Footer = () => {
           <h2 className="text-xl font-bold mb-4">Campus-Update</h2>
           <p>6th Floor, Tower B, Connaught Place, Rajiv Chowk</p>
           <p>New Delhi - 110001, India</p>
-          <p className="mt-2">Phone: +91 23*******</p>
-          <p>Email: campusupdate@gmail.com</p>
+          <a href="tel:+91 7582822000">
+            <p className="mt-2">Phone: +91 7582822000</p>
+          </a>
+          <a href="mailto:infocampusupdates@gmail.com">
+            <p>Email: infocampusupdates@gmail.com</p>
+          </a>
           <div className="flex gap-4 mt-4">
+            <a target="_blank" href="https://www.instagram.com/campusupdates_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="text-gray-700 hover:text-green-600 text-xl">
+              <FaInstagram />
+            </a>
             <a href="#" className="text-gray-700 hover:text-green-600 text-xl">
               <FaFacebook />
             </a>
@@ -22,9 +29,6 @@ const Footer = () => {
             </a>
             <a href="#" className="text-gray-700 hover:text-green-600 text-xl">
               <FaLinkedin />
-            </a>
-            <a href="#" className="text-gray-700 hover:text-green-600 text-xl">
-              <FaInstagram />
             </a>
           </div>
         </div>
