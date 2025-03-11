@@ -1,16 +1,32 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleNavigate = (sectionId) => {
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: sectionId } });
+    } else {
+      setTimeout(() => {
+        document
+          .getElementById(sectionId)
+          ?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  };
+
   return (
     <footer className="bg-gray-100 text-gray-700 py-8 md:px-32 px-4 pt-10">
       <div className="container mx-auto px-4 flex flex-col md:flex-row md:justify-between gap-8">
         {/* Left Section */}
         <div className="md:w-1/3">
-          <h2 className="text-xl font-bold mb-4">Campus-Update</h2>
-          <p>6th Floor, Tower B, Connaught Place, Rajiv Chowk</p>
-          <p>New Delhi - 110001, India</p>
+          <h2 className="text-xl font-bold mb-4">Campus-Updates</h2>
+
+          <p>101 Western Business Centre, New</p>
+          <p>Palasiya, Indore, MP, India</p>
           <a href="tel:+91 7582822000">
             <p className="mt-2">Phone: +91 7582822000</p>
           </a>
@@ -18,15 +34,17 @@ const Footer = () => {
             <p>Email: infocampusupdates@gmail.com</p>
           </a>
           <div className="flex gap-4 mt-4">
-            <a target="_blank" href="https://www.instagram.com/campusupdates_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="text-gray-700 hover:text-green-600 text-xl">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/campusupdates_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              className="text-gray-700 hover:text-green-600 text-xl"
+            >
               <FaInstagram />
             </a>
             <a href="#" className="text-gray-700 hover:text-green-600 text-xl">
               <FaFacebook />
             </a>
-            <a href="#" className="text-gray-700 hover:text-green-600 text-xl">
-              <FaTwitter />
-            </a>
+
             <a href="#" className="text-gray-700 hover:text-green-600 text-xl">
               <FaLinkedin />
             </a>
@@ -35,7 +53,7 @@ const Footer = () => {
 
         {/* Right Section */}
         <div className="md:w-2/3">
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid lg:grid-cols-3 grid-cols-2 gap-6">
             {/* Useful Links */}
             <div>
               <h3 className="text-lg font-semibold mb-4">Useful Links</h3>
@@ -51,25 +69,55 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-green-600">
-                    Services
-                  </a>
+                  <button
+                    onClick={() => handleNavigate("campus-ambassador")}
+                    className="hover:text-green-600 text-left"
+                  >
+                    Become a Campus Ambassador
+                  </button>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-green-600">
-                    Terms of service
-                  </a>
+                  <Link to={"/college"}>Colleges</Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Other Useful Links</h3>
+              <ul className="space-y-2">
+                <li>
+                  <button
+                    onClick={() => handleNavigate("expert")}
+                    className="hover:text-green-600"
+                  >
+                    Our Experts
+                  </button>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-green-600">
-                    Privacy policy
-                  </a>
+                  <button
+                    onClick={() => handleNavigate("testimonials")}
+                    className="hover:text-green-600"
+                  >
+                    Testimonials
+                  </button>
+                </li>
+                <li>
+                  <Link to={"/contact-us"} className="hover:text-green-600">
+                    Contact Us
+                  </Link>
+                </li>
+                <li>
+                  <button
+                    onClick={() => handleNavigate("courses")}
+                    className="hover:text-green-600"
+                  >
+                    Courses
+                  </button>
                 </li>
               </ul>
             </div>
 
             {/* Our Services */}
-            <div className="md:w-2/3">
+            <div className="md:w-2/3 lg:col-span-1 col-span-2">
               <h3 className="text-lg font-semibold mb-4">Our Services</h3>
               <ul className="space-y-2">
                 <li>

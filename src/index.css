@@ -1,7 +1,11 @@
 @import "tailwindcss";
 
-.slick-slide > div{
-    margin: 0 10px;
+.slick-slide > div {
+  margin: 0 10px;
 }
 
+
+@theme {
+  --breakpoint-3xl: 112.5rem; /* 1800px */
+}
   

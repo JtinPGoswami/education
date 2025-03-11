@@ -84,7 +84,7 @@ const HomePage = () => {
   return (
     <>
       <section
-        className="relative w-full md:h-screen h-auto bg-black md:py-0 py-10"
+        className="relative w-full md:h-screen h-auto bg-black md:py-0 py-10 overflow-hidden"
         id="home"
       >
         <video
@@ -92,7 +92,7 @@ const HomePage = () => {
           loop
           muted
           playsInline
-          className="absolute top-0 left-0 w-full h-full object-cover"
+          className="absolute top-0 left-0 w-full h-full scale-110 object-cover"
         >
           <source src={hero_video} type="video/mp4" />
           Your browser does not support the video tag.
@@ -106,20 +106,22 @@ const HomePage = () => {
             Your Gateway to Informed MBA College Decisions
           </h1>
 
-
           <p className="md:text-2xl md:w-[60%] w-full text-xl  md:mb-20 mb-5 text-[#ffffffbe] ">
             Explore genuine reviews, personalized mentorship, and expert
             guidance to make the best decision for your MBA journey and beyond.{" "}
           </p>
           <Link to={"/college"}>
-            <button className="border text-lg  rounded-full hover:bg-[#77d693] hover:border-[#77d693] px-6  transition-all duration-300 ease-linear py-1">
+            <button
+              className="border text-lg rounded-full  hover:border-[#77d693] px-6 transition-all duration-300 ease-linear py-1 
+  hover:bg-gradient-to-r hover:from-green-400 hover:via-blue-500 hover:to-purple-600 hover:text-transparent hover:bg-clip-text font-bold  bg-opacity-10 backdrop-blur-lg"
+            >
               Start Your College Search Today
             </button>
           </Link>
         </div>
       </section>
       <section>
-        <div className="w-[95%] mx-auto sm:p-20 p-4 text-2xl font-thin text-white rounded-md  bg-[#77d693e1] hover:bg-[#77d693] mt-10">
+        <div className="w-[95%] mx-auto sm:p-20 p-4 text-2xl border border-gray-500 text-black font-medium  rounded-md   mt-10">
           <p className="sm:text-base text-sm">
             Welcome to Campus Updates – the trusted platform that helps aspiring
             MBA students, law, engineering, and medical aspirants make informed
@@ -210,7 +212,6 @@ const HomePage = () => {
                 exams, eligibility, and application procedures.
               </li>
             </ul>
-            
           </div>
           <div></div>
           <div className="md:w-1/2 w-full h-full flex justify-center items-center ">
@@ -229,12 +230,12 @@ const HomePage = () => {
           ))}
         </div>
         <div className="md:text-left text-center mt-10">
-              <Link to={"/college"}>
-                <button className="md:w-auto w-4/5 px-8  bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition text-lg">
-                  Browse College Profiles
-                </button>
-              </Link>
-            </div>
+          <Link to={"/college"}>
+            <button className="md:w-auto w-4/5 px-8  bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition text-lg">
+              Browse College Profiles
+            </button>
+          </Link>
+        </div>
       </div>
       <hr className="my-10 border-2 text-[#3f3b3b6b] "></hr>
       {/* events section */}
@@ -357,7 +358,7 @@ const HomePage = () => {
       <hr className="my-10 border-2 text-[#3f3b3b6b] "></hr>
       {/* testimonial */}
 
-      <section className="w-full px-[5%] my-20 space-y-5">
+      <section id="testimonials" className="w-full px-[5%] my-20 space-y-5">
         <h3 className="text-3xl font-bold">
           See What <span className="text-[#5FCF80]">Our Students</span> Have to
           Say

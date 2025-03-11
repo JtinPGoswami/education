@@ -18,29 +18,29 @@ const Header = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
-  const handleSearch = (e) => {
-    const term = e.target.value;
-    setSearchTerm(term);
-    if (term.length > 0) {
-      const results = collegeDetailedData.filter((college) =>
-        college.name.toLowerCase().includes(term.toLowerCase())
-      );
-      setFilteredColleges(results);
-    } else {
-      setFilteredColleges([]);
-    }
-  };
+  // const handleSearch = (e) => {
+  //   const term = e.target.value;
+  //   setSearchTerm(term);
+  //   if (term.length > 0) {
+  //     const results = collegeDetailedData.filter((college) =>
+  //       college.name.toLowerCase().includes(term.toLowerCase())
+  //     );
+  //     setFilteredColleges(results);
+  //   } else {
+  //     setFilteredColleges([]);
+  //   }
+  // };
 
-  const handleSelectCollege = (id) => {
-    const selected = collegeDetailedData.find((college) => college.id === id);
-    if (selected) {
-      selectCollege(selected);
-      navigate("/college-detail");
-    }
-    setSearchTerm("");
-    setFilteredColleges([]);
-    setIsSidebarOpen(false);
-  };
+  // const handleSelectCollege = (id) => {
+  //   const selected = collegeDetailedData.find((college) => college.id === id);
+  //   if (selected) {
+  //     selectCollege(selected);
+  //     navigate("/college-detail");
+  //   }
+  //   setSearchTerm("");
+  //   setFilteredColleges([]);
+  //   setIsSidebarOpen(false);
+  // };
   const handleNavigation = (sectionId) => {
     setIsSidebarOpen(false);
     navigate("/"); // Navigate to home page
@@ -71,14 +71,14 @@ const Header = () => {
 
   return (
     <>
-      <header className="z-30 fixed top-0 w-full xl:px-32 flex justify-between shadow-md items-center p-4 h-26 bg-white text-black">
+      <header className=" 3xl:container w-full mx-auto z-30 fixed top-0 xl:px-20 flex justify-between shadow-md items-center p-4 h-26 bg-white text-black">
         <Link to={"/"}>
           <div className="h-24">
             <img className="h-24 " src={logo_main} alt="campus updates logo" />
           </div>
         </Link>
-        <div className="flex md:w-4/5 w-1/2 md:justify-end justify-center items-center lg:gap-10 gap-3.5">
-          <div className="w-full md:w-[30%] hidden relative sm:flex justify-between bg-transparent border border-slate-300 rounded-full h-8">
+        <div className="flex md:w-[95%] w-1/2 md:justify-end justify-center items-center lg:gap-5 gap-3.5">
+          {/* <div className="w-full md:w-[30%] hidden relative sm:flex justify-between bg-transparent border border-slate-300 rounded-full h-8">
             <input
               type="text"
               className="outline-none border-none pl-2 w-[90%] rounded-tl-full rounded-bl-full"
@@ -88,82 +88,93 @@ const Header = () => {
             <div className="w-10 bg-[#77d693] rounded-tr-full rounded-br-full flex items-center justify-center">
               <FiSearch className="text-xl text-white" />
             </div>
-          </div>
-          {filteredColleges.length > 0 && (
+          </div> */}
+          {/* {filteredColleges.length > 0 && (
             <ul className="absolute sm:block hidden  left-0 top-24 mt-1 w-full bg-white border shadow-md rounded-md max-h-60 overflow-y-auto">
               {filteredColleges.map((college) => (
                 <li
                   key={college.id}
-                  className="p-2 cursor-pointer hover:bg-gray-100"
+                  className="p-2 cursor-pointer hover:bg-gray-100 font-bold"
                   onClick={() => handleSelectCollege(college.id)}
                 >
                   {college.name}
                 </li>
               ))}
-            </ul>
-          )}
+            </ul> */}
+          {/* )} */}
 
-          <ul className="hidden md:flex justify-center lg:gap-10 gap-3.5">
+          <ul className="hidden lg:flex justify-center lg:gap-5 gap-3.5">
             <NavLink
               to="/"
-              className={({ isActive }) =>
-                isActive ? "text-[#77d693] font-bold" : "font-light"
-              }
+              className={({ isActive }) => isActive && "text-[#77d693] "}
             >
               <li
-                className="cursor-pointer text-base  hover:text-[#77d693]"
+                className="cursor-pointer text-base font-semibold hover:text-[#77d693]"
                 onClick={() => navigate("/")}
               >
                 Home
               </li>
             </NavLink>
+            <li
+              className="cursor-pointer text-base font-semibold hover:text-[#77d693]"
+              onClick={() => handleNavigation("campus-ambassador")}
+            >
+              Become a Campus Ambassador
+            </li>
             <NavLink
               to="/about-us"
               className={({ isActive }) =>
-                isActive ? "text-[#77d693] font-bold" : "font-light"
+                isActive && "text-[#77d693] font-bold"
               }
             >
-              <li className="cursor-pointer text-base  hover:text-[#77d693]">
-                About
+              <li className="cursor-pointer text-base font-semibold hover:text-[#77d693]">
+                About Us
               </li>
             </NavLink>
             <NavLink
               to={"/college"}
               className={({ isActive }) =>
-                isActive ? "text-[#77d693] font-bold" : "font-light"
+                isActive && "text-[#77d693] font-bold"
               }
             >
-              <li className="cursor-pointer text-base font-light hover:text-[#77d693]">
+              <li className="cursor-pointer text-base font-semibold hover:text-[#77d693]">
                 Colleges
               </li>
             </NavLink>
+
             <li
-              className="cursor-pointer text-base font-light hover:text-[#77d693]"
+              className="cursor-pointer text-base font-semibold hover:text-[#77d693]"
               onClick={() => handleNavigation("courses")}
             >
               Courses
             </li>
             <li
-              className="cursor-pointer text-base font-light hover:text-[#77d693]"
+              className="cursor-pointer text-base font-semibold hover:text-[#77d693]"
               onClick={() => handleNavigation("expert")}
             >
-              Experts
+              Our Experts
+            </li>
+            <li
+              className="cursor-pointer text-base font-semibold hover:text-[#77d693]"
+              onClick={() => handleNavigation("testimonials")}
+            >
+              Testimonials
             </li>
             <NavLink
               to="/contact-us"
               className={({ isActive }) =>
-                isActive ? "text-[#77d693] font-bold" : "font-light"
+                isActive && "text-[#77d693] font-bold"
               }
             >
-              <li className="cursor-pointer text-base  hover:text-[#77d693]">
-                Contact
+              <li className="cursor-pointer text-base font-semibold  hover:text-[#77d693]">
+                Contact Us
               </li>
             </NavLink>
           </ul>
         </div>
 
         <RxHamburgerMenu
-          className="md:hidden block text-2xl mr-10 cursor-pointer active:scale-105"
+          className="lg:hidden block text-2xl mr-10 cursor-pointer active:scale-105"
           onClick={toggleSidebar}
         />
       </header>
@@ -196,7 +207,7 @@ const Header = () => {
         </div>
 
         {/* Search Input in Sidebar */}
-        <div className="w-full relative mt-4 mb-4 px-6">
+        {/* <div className="w-full relative mt-4 mb-4 px-6">
           <input
             type="text"
             className="outline-none border sm:hidden block border-slate-300 rounded-full w-full pl-2 h-8"
@@ -220,17 +231,15 @@ const Header = () => {
               ))}
             </ul>
           )}
-        </div>
+        </div> */}
 
         <ul className="flex flex-col gap-6 mt-8 px-6 items-center">
           <NavLink
             to="/"
-            className={({ isActive }) =>
-              isActive ? "text-[#77d693] font-bold" : "font-light"
-            }
+            className={({ isActive }) => isActive && "text-[#77d693] font-bold"}
           >
             <li
-              className="cursor-pointer text-base  hover:text-[#77d693]"
+              className="cursor-pointer text-base font-semibold  hover:text-[#77d693]"
               onClick={() => {
                 setIsSidebarOpen(false);
               }}
@@ -238,29 +247,31 @@ const Header = () => {
               Home
             </li>
           </NavLink>
+          <li
+            className="cursor-pointer text-base text-center font-semibold hover:text-[#77d693]"
+            onClick={() => handleNavigation("campus-ambassador")}
+          >
+            Become a Campus Ambassador
+          </li>
           <NavLink
             to="/about-us"
-            className={({ isActive }) =>
-              isActive ? "text-[#77d693] font-bold" : "font-light"
-            }
+            className={({ isActive }) => isActive && "text-[#77d693] font-bold"}
           >
             <li
-              className="cursor-pointer text-base  hover:text-[#77d693]"
+              className="cursor-pointer text-base font-semibold  hover:text-[#77d693]"
               onClick={() => {
                 setIsSidebarOpen(false);
               }}
             >
-              About
+              About Us
             </li>
           </NavLink>
           <NavLink
             to={"/college"}
-            className={({ isActive }) =>
-              isActive ? "text-[#77d693] font-bold" : "font-light"
-            }
+            className={({ isActive }) => isActive && "text-[#77d693] font-bold"}
           >
             <li
-              className="cursor-pointer text-base font-light hover:text-[#77d693]"
+              className="cursor-pointer text-base font-semibold hover:text-[#77d693]"
               onClick={() => {
                 setIsSidebarOpen(false);
               }}
@@ -269,7 +280,7 @@ const Header = () => {
             </li>
           </NavLink>
           <li
-            className="cursor-pointer text-base font-light hover:text-[#77d693]"
+            className="cursor-pointer text-base font-semibold hover:text-[#77d693]"
             onClick={() => {
               handleNavigation("courses");
               setIsSidebarOpen(false);
@@ -278,22 +289,26 @@ const Header = () => {
             Courses
           </li>
           <li
-            className="cursor-pointer text-base font-light hover:text-[#77d693]"
+            className="cursor-pointer text-base font-semibold hover:text-[#77d693]"
             onClick={() => {
               handleNavigation("expert");
               setIsSidebarOpen(false);
             }}
           >
-            Experts
+            Our Experts
+          </li>
+          <li
+            className="cursor-pointer text-base font-semibold hover:text-[#77d693]"
+            onClick={() => handleNavigation("testimonials")}
+          >
+            Testimonials
           </li>
           <NavLink
             to="/contact-us"
-            className={({ isActive }) =>
-              isActive ? "text-[#77d693] font-bold" : "font-light"
-            }
+            className={({ isActive }) => isActive && "text-[#77d693] font-bold"}
           >
             <li
-              className="cursor-pointer text-base  hover:text-[#77d693]"
+              className="cursor-pointer text-base  font-semibold hover:text-[#77d693]"
               onClick={() => {
                 setIsSidebarOpen(false);
               }}

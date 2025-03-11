@@ -1,19 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Outlet, useLocation } from "react-router-dom";
 import Header from "../components/Header";
-import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer";
 import Whatsapp from "../components/Whatsapp";
 
 const HomeLayout = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      setTimeout(() => {
+        document
+          .getElementById(location.state.scrollTo)
+          ?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  }, [location]);
+
   return (
     <>
-      <Header />
-
-      <main className="mt-24">
-        <Outlet />
-      </main>
-      <Whatsapp/>
-      <Footer />
+      <div className="3xl:container 3xl:mx-auto  w-full">
+        <Header />
+        <main className="mt-24 ">
+          <Outlet />
+        </main>
+        <Whatsapp />
+        <Footer />
+      </div>
     </>
   );
 };

@@ -24,7 +24,10 @@ const CampusAmbassador = () => {
   };
 
   return (
-    <section className="w-[90%] mx-auto  mt-20 space-y-16">
+    <section
+      id="campus-ambassador"
+      className="w-[90%] mx-auto  mt-20 space-y-16"
+    >
       <div>
         <h1 className="md:text-3xl text-2xl font-bold">
           Become a Campus Ambassador <br />
@@ -53,12 +56,12 @@ const CampusAmbassador = () => {
           </h3>
           <ul className="list-disc mt-3 px-3 gap-y-3 md:text-lg sm:text-base text-sm font-medium">
             <li>
-              Share your knowledge about the platform with your college
-              community.
+              Act as the voice of Campus Updates, promoting our platform within
+              your college
             </li>
             <li>
-              Help students navigate through college reviews, mentorship, and
-              entrance exam guidance.
+              Assist students in exploring college options, mentorship
+              opportunities, and entrance exam resources.
             </li>
             <li>
               Organize campus events and webinars in collaboration with Campus
@@ -94,10 +97,7 @@ const CampusAmbassador = () => {
       </div>
       <div className="flex justify-center items-center lg:flex-row flex-col-reverse  gap-5 ">
         <div className="flex">
-          <form
-            onSubmit={handleSubmit}
-            className="space-y-6 bg-white p-6 "
-          >
+          <form onSubmit={handleSubmit} className="space-y-6 bg-white p-6 ">
             <div className="flex justify-between gap-4 items-center flex-wrap">
               {/* Name */}
               <div className="lg:w-[48%] w-full">
@@ -112,7 +112,7 @@ const CampusAmbassador = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                 className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                   placeholder="Your Name"
                   required
                 />
@@ -150,7 +150,7 @@ const CampusAmbassador = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                 className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                   placeholder="Your Phone Number"
                   required
                 />
@@ -169,7 +169,7 @@ const CampusAmbassador = () => {
                   name="college"
                   value={formData.college}
                   onChange={handleChange}
-                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                   placeholder="College Name"
                   required
                 />
@@ -187,7 +187,7 @@ const CampusAmbassador = () => {
                   name="state"
                   value={formData.state}
                   onChange={handleChange}
-                 className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                   required
                 >
                   <option value="">Select State</option>
