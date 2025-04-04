@@ -79,6 +79,14 @@ const Footer = () => {
                 <li>
                   <Link to={"/college"}>Colleges</Link>
                 </li>
+                <li>
+                  <button
+                    onClick={() => handleNavigate("connect-campus-ambassador")}
+                    className="hover:text-green-600 text-left"
+                  >
+                    Connect a Campus Ambassador
+                  </button>
+                </li>
               </ul>
             </div>
             <div>
@@ -103,6 +111,11 @@ const Footer = () => {
                 <li>
                   <Link to={"/contact-us"} className="hover:text-green-600">
                     Contact Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/career"} className="hover:text-green-600">
+                    Career
                   </Link>
                 </li>
                 <li>

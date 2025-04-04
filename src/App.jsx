@@ -8,6 +8,7 @@ import AboutUsPage from "./pages/AboutUsPage";
 import CollegeDetailPage from "./pages/CollegeDetailPage";
 import { CollegeProvider } from "./context/CollegeContext";
 import AllColleges from "./pages/AllColleges";
+import CareerPage from "./pages/CareerPage";
 function App() {
   return (
     <>
@@ -17,8 +18,9 @@ function App() {
             <Route index element={<HomePage />} />
             <Route path="/contact-us" element={<ContactUsPage />} />
             <Route path="/about-us" element={<AboutUsPage />} />
-            <Route path="/college" element={<AllColleges/>} />
+            <Route path="/college" element={<AllColleges />} />
             <Route path="/college-detail" element={<CollegeDetailPage />} />
+            <Route path="/career" element={<CareerPage />} />
           </Route>
         </Routes>
       </CollegeProvider>

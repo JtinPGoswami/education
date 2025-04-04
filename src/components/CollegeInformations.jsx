@@ -150,44 +150,52 @@ const Fees = ({ feesInfo }) => {
           </tbody>
         </table>
       </div>
-      {feesInfo.courseTotalFee&&<>
-      <div className="mt-10">
-        <h1 className="text-xl font-bold text-gray-700 mb-5">Top Course Fee</h1>
-        <h1 className="text-lg font-bold text-gray-600">
-          {feesInfo.courseTotalFee.courseName}
-        </h1>
-        {feesInfo.courseTotalFee.desc && (
-          <p className="text-gray-700 font-medium mt-6">
-            {feesInfo.courseTotalFee.desc}
-          </p>
-        )}
-      </div>
-      <div className="mt-8">
-        <table className="w-full border-collapse border border-gray-300">
-          <thead>
-            <tr className="bg-gray-100 text-gray-700 text-left border border-gray-300  p-2">
-              <th className="border border-gray-300 p-2">
-                {feesInfo.courseTotalFee.tHeading.labelOne}
-              </th>
-              <th className="border border-gray-300 p-2">
-                {feesInfo.courseTotalFee.tHeading.labelTwo}
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {feesInfo.courseTotalFee.tData.map((item, index) => (
-              <tr key={index} className="border border-gray-300 text-gray-700 ">
-                <td className="border border-gray-300 p-2 font-semibold">
-                  {item.labelOne}
-                </td>
-                <td className="border border-gray-300 p-2">{item.labelTwo}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      </>
-          }
+      {feesInfo.courseTotalFee && (
+        <>
+          <div className="mt-10">
+            <h1 className="text-xl font-bold text-gray-700 mb-5">
+              Top Course Fee
+            </h1>
+            <h1 className="text-lg font-bold text-gray-600">
+              {feesInfo.courseTotalFee.courseName}
+            </h1>
+            {feesInfo.courseTotalFee.desc && (
+              <p className="text-gray-700 font-medium mt-6">
+                {feesInfo.courseTotalFee.desc}
+              </p>
+            )}
+          </div>
+          <div className="mt-8">
+            <table className="w-full border-collapse border border-gray-300">
+              <thead>
+                <tr className="bg-gray-100 text-gray-700 text-left border border-gray-300  p-2">
+                  <th className="border border-gray-300 p-2">
+                    {feesInfo.courseTotalFee.tHeading.labelOne}
+                  </th>
+                  <th className="border border-gray-300 p-2">
+                    {feesInfo.courseTotalFee.tHeading.labelTwo}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {feesInfo.courseTotalFee.tData.map((item, index) => (
+                  <tr
+                    key={index}
+                    className="border border-gray-300 text-gray-700 "
+                  >
+                    <td className="border border-gray-300 p-2 font-semibold">
+                      {item.labelOne}
+                    </td>
+                    <td className="border border-gray-300 p-2">
+                      {item.labelTwo}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
+      )}
     </div>
   );
 };
@@ -255,7 +263,6 @@ const Admissions = ({ admissionInfo }) => {
   );
 };
 
-
 const Placements = ({ placementInfo }) => {
   return (
     <div>
@@ -303,8 +310,6 @@ const TextReview = ({ textReview }) => {
   );
 };
 const VideoReview = ({ videoReview }) => {
-  console.log(videoReview.video);
-
   return (
     <div className=" p-2  rounded-lg border border-gray-700">
       <video

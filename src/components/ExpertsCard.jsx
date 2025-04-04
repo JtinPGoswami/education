@@ -25,6 +25,8 @@ const ExpertsCard = () => {
       education: "BBA, LLB, LLM, PhD",
       experties: "Management Consulting",
       img: Garun,
+      Linkedin:
+        "https://www.linkedin.com/in/adv-garun-bhadoria-419430171?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       name: "ADV. Dhiresh Singh Rathore",
@@ -32,16 +34,18 @@ const ExpertsCard = () => {
       education: "B.com, MBA, LLB, LLM",
       experties: "Management Consultant",
       img: Dhiresh,
+      Linkedin:
+        "https://www.linkedin.com/in/dhiresh-singh-rathore-b9272928b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
-    {
-      name: "Ankit Pandey",
-      email: "annkitpandey64@gmail.com",
-      education: "B.Sc (CS)",
-      experties:
-        "Market Research & Analytics, Process Optimization & Efficiency, Project Management, Quality Control & Compliance",
-      img: Ankit,
-      Linkedin: "https://www.linkedin.com/in/ankit-pandey-740a72327/",
-    },
+    // {
+    //   name: "Ankit Pandey",
+    //   email: "annkitpandey64@gmail.com",
+    //   education: "B.Sc (CS)",
+    //   experties:
+    //     "Market Research & Analytics, Process Optimization & Efficiency, Project Management, Quality Control & Compliance",
+    //   img: Ankit,
+    //   Linkedin: "https://www.linkedin.com/in/ankit-pandey-740a72327/",
+    // },
     {
       name: " Mohit Gangrade",
       email: "mohitgangrade3002@gmail.com ",

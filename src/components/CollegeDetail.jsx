@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import { BsStarFill } from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
 const CollegeDetail = ({ college }) => {
-  console.log(college.brochure);
-
   return (
     <section className="mt-8 border border-gray-300 rounded-xl overflow-hidden  w-full  ">
       <div className="w-full h-[200px] overflow-hidden">

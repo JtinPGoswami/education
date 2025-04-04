@@ -115,22 +115,24 @@ const Header = () => {
                 Home
               </li>
             </NavLink>
-            <li
-              className="cursor-pointer text-base font-semibold hover:text-[#77d693]"
-              onClick={() => handleNavigation("campus-ambassador")}
-            >
-              Become a Campus Ambassador
-            </li>
-            <NavLink
-              to="/about-us"
-              className={({ isActive }) =>
-                isActive && "text-[#77d693] font-bold"
-              }
-            >
-              <li className="cursor-pointer text-base font-semibold hover:text-[#77d693]">
-                About Us
+
+            <button className="cursor-pointer text-base font-semibold hover:text-[#77d693]">
+              Campus Ambassador
+            </button>
+            <div>
+              <li
+                className="cursor-pointer text-base font-semibold hover:text-[#77d693]"
+                onClick={() => handleNavigation("campus-ambassador")}
+              >
+                Become a Campus Ambassador
               </li>
-            </NavLink>
+              <li
+                className="cursor-pointer text-base text-center font-semibold hover:text-[#77d693]"
+                onClick={() => handleNavigation("connect-campus-ambassador")}
+              >
+                Connect a Campus Ambassador
+              </li>
+            </div>
             <NavLink
               to={"/college"}
               className={({ isActive }) =>
@@ -141,7 +143,21 @@ const Header = () => {
                 Colleges
               </li>
             </NavLink>
-
+            <NavLink
+              to="/career"
+              className={({ isActive }) =>
+                isActive && "text-[#77d693] font-bold"
+              }
+            >
+              <li
+                className="cursor-pointer text-base font-semibold  hover:text-[#77d693]"
+                onClick={() => {
+                  setIsSidebarOpen(false);
+                }}
+              >
+                Career
+              </li>
+            </NavLink>
             <li
               className="cursor-pointer text-base font-semibold hover:text-[#77d693]"
               onClick={() => handleNavigation("courses")}
@@ -168,6 +184,16 @@ const Header = () => {
             >
               <li className="cursor-pointer text-base font-semibold  hover:text-[#77d693]">
                 Contact Us
+              </li>
+            </NavLink>
+            <NavLink
+              to="/about-us"
+              className={({ isActive }) =>
+                isActive && "text-[#77d693] font-bold"
+              }
+            >
+              <li className="cursor-pointer text-base font-semibold hover:text-[#77d693]">
+                About Us
               </li>
             </NavLink>
           </ul>
@@ -253,19 +279,13 @@ const Header = () => {
           >
             Become a Campus Ambassador
           </li>
-          <NavLink
-            to="/about-us"
-            className={({ isActive }) => isActive && "text-[#77d693] font-bold"}
+          <li
+            className="cursor-pointer text-base text-center font-semibold hover:text-[#77d693]"
+            onClick={() => handleNavigation("connect-campus-ambassador")}
           >
-            <li
-              className="cursor-pointer text-base font-semibold  hover:text-[#77d693]"
-              onClick={() => {
-                setIsSidebarOpen(false);
-              }}
-            >
-              About Us
-            </li>
-          </NavLink>
+            Connect a Campus Ambassador
+          </li>
+
           <NavLink
             to={"/college"}
             className={({ isActive }) => isActive && "text-[#77d693] font-bold"}
@@ -277,6 +297,19 @@ const Header = () => {
               }}
             >
               Colleges
+            </li>
+          </NavLink>
+          <NavLink
+            to="/career"
+            className={({ isActive }) => isActive && "text-[#77d693] font-bold"}
+          >
+            <li
+              className="cursor-pointer text-base font-semibold  hover:text-[#77d693]"
+              onClick={() => {
+                setIsSidebarOpen(false);
+              }}
+            >
+              Career
             </li>
           </NavLink>
           <li
@@ -314,6 +347,19 @@ const Header = () => {
               }}
             >
               Contact
+            </li>
+          </NavLink>
+          <NavLink
+            to="/about-us"
+            className={({ isActive }) => isActive && "text-[#77d693] font-bold"}
+          >
+            <li
+              className="cursor-pointer text-base font-semibold  hover:text-[#77d693]"
+              onClick={() => {
+                setIsSidebarOpen(false);
+              }}
+            >
+              About Us
             </li>
           </NavLink>
         </ul>

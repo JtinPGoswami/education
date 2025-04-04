@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import campus from "../assets/campus.jpeg";
+import { States } from "../data/StatesData";
+import toast from "react-hot-toast";
 
 const CampusAmbassador = () => {
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -18,15 +21,60 @@ const CampusAmbassador = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Data Submitted:", formData);
+    setLoading(true);
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycby3ssllcUFVxEURAQFjYOUNtxQzELngpJZOBrdnmBRMRHSZBhxQHIDU7O3sr7pg7VVRzw/exec";
+
+    try {
+      const formDataToSend = new FormData();
+      formDataToSend.append("name", formData.name);
+      formDataToSend.append("email", formData.email);
+      formDataToSend.append("phone", formData.phone);
+      formDataToSend.append("college", formData.college); // Added missing field
+      formDataToSend.append("state", formData.state);
+      formDataToSend.append("city", formData.city);
+      formDataToSend.append("time", formData.time);
+      formDataToSend.append("message", formData.message);
+
+      const response = await fetch(scriptURL, {
+        method: "POST",
+        body: formDataToSend,
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        if (result.status === "success") {
+          toast.success("Form submitted successfully!");
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            college: "",
+            state: "",
+            city: "",
+            time: "",
+            message: "",
+          });
+        } else {
+          toast.error("Failed to submit form.");
+        }
+      } else {
+        const errorText = await response.text();
+        toast.error("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      toast.error("Failed to submit form");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <section
       id="campus-ambassador"
-      className="w-[90%] mx-auto  mt-20 space-y-16"
+      className="w-[90%] mx-auto mt-20 space-y-16"
     >
       <div>
         <h1 className="md:text-3xl text-2xl font-bold">
@@ -49,8 +97,8 @@ const CampusAmbassador = () => {
         </p>
       </div>
 
-      <div className="mt-4 grid md:grid-cols-2 grid-cols-1 gap-5 ">
-        <div className="w-full ">
+      <div className="mt-4 grid md:grid-cols-2 grid-cols-1 gap-5">
+        <div className="w-full">
           <h3 className="md:text-2xl text-lg font-bold mt-4">
             What You'll Do:
           </h3>
@@ -74,7 +122,7 @@ const CampusAmbassador = () => {
           </ul>
         </div>
 
-        <div className="w-full ">
+        <div className="w-full">
           <h3 className="md:text-2xl text-lg font-bold mt-4">
             Perks of Being a Campus Ambassador:
           </h3>
@@ -88,16 +136,16 @@ const CampusAmbassador = () => {
           </ul>
         </div>
       </div>
-      <div className="flex md:flex-row flex-col justify-start items-center gap-3.5 mb-8  w-full">
-        <h3 className=" text-2xl font-bold ">How to Apply:</h3>
+      <div className="flex md:flex-row flex-col justify-start items-center gap-3.5 mb-8 w-full">
+        <h3 className="text-2xl font-bold">How to Apply:</h3>
         <p className="text-wrap text-lg pt-1">
           Fill out the form below to apply for the position of Campus Ambassador
           at your college.
         </p>
       </div>
-      <div className="flex justify-center items-center lg:flex-row flex-col-reverse  gap-5 ">
+      <div className="flex justify-center items-center lg:flex-row flex-col-reverse gap-5">
         <div className="flex">
-          <form onSubmit={handleSubmit} className="space-y-6 bg-white p-6 ">
+          <form onSubmit={handleSubmit} className="space-y-6 bg-white p-6">
             <div className="flex justify-between gap-4 items-center flex-wrap">
               {/* Name */}
               <div className="lg:w-[48%] w-full">
@@ -119,7 +167,7 @@ const CampusAmbassador = () => {
               </div>
 
               {/* Email */}
-              <div className="lg:w-[48%] w-full ">
+              <div className="lg:w-[48%] w-full">
                 <label
                   htmlFor="email"
                   className="block text-sm font-medium text-gray-700"
@@ -190,9 +238,14 @@ const CampusAmbassador = () => {
                   className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                   required
                 >
-                  <option value="">Select State</option>
-                  <option value="Andhra Pradesh">Andhra Pradesh</option>
-                  <option value="Madhya Pradesh">Madhya Pradesh</option>
+                  <option value="" disabled={true}>
+                    Select State
+                  </option>
+                  {States.map((state) => (
+                    <option key={state} value={state}>
+                      {state}
+                    </option>
+                  ))}
                 </select>
               </div>
 
@@ -209,7 +262,7 @@ const CampusAmbassador = () => {
                   name="city"
                   value={formData.city}
                   onChange={handleChange}
-                  className="block w-full mt-1 py-2 px-3 border  rounded-md shadow-sm focus:outline-[#77d693]"
+                  className="block w-full mt-1 py-2 px-3 border rounded-md shadow-sm focus:outline-[#77d693]"
                   placeholder="Your City"
                   required
                 />
@@ -228,7 +281,7 @@ const CampusAmbassador = () => {
                   type="time"
                   value={formData.time}
                   onChange={handleChange}
-                  className="block w-full mt-1 py-2 px-3 border  rounded-md shadow-sm focus:outline-[#77d693]"
+                  className="block w-full mt-1 py-2 px-3 border rounded-md shadow-sm focus:outline-[#77d693]"
                   required
                 />
               </div>
@@ -247,7 +300,7 @@ const CampusAmbassador = () => {
                 value={formData.message}
                 onChange={handleChange}
                 rows="6"
-                className="block w-full mt-1 py-2 px-3 border  rounded-md shadow-sm focus:outline-[#77d693] resize-none"
+                className="block w-full mt-1 py-2 px-3 border rounded-md shadow-sm focus:outline-[#77d693] resize-none"
                 placeholder="Your Message"
                 required
               ></textarea>
@@ -255,12 +308,21 @@ const CampusAmbassador = () => {
 
             {/* Submit Button */}
             <div className="text-center">
-              <button
-                type="submit"
-                className="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition"
-              >
-                Submit
-              </button>
+              {loading ? (
+                <button
+                  disabled={true}
+                  className="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition"
+                >
+                  Submitting ...
+                </button>
+              ) : (
+                <button
+                  type="submit"
+                  className="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition"
+                >
+                  Submit
+                </button>
+              )}
             </div>
           </form>
         </div>

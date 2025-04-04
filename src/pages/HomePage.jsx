@@ -11,6 +11,8 @@ import DomainCard from "../components/DomainCard";
 import Testimonial from "../components/Testimonial";
 import { Link, useLocation } from "react-router-dom";
 import { collegeDetailedData } from "../data/college";
+import ConnectCampusAmbassador from "../components/ConnetCampusAmbassador";
+import InstagramPosts from "../components/InstaFeed";
 
 const HomePage = () => {
   const { hash } = useLocation(); //
@@ -137,6 +139,8 @@ const HomePage = () => {
       <Question />
       <hr className="my-10 border-2 text-[#3f3b3b6b] "></hr>
       <CampusAmbassador />
+      <hr className="my-10 border-2  text-[#3f3b3b6b] "></hr>
+      <ConnectCampusAmbassador />
       <hr className="my-10 border-2  text-[#3f3b3b6b] "></hr>
       <div className="w-full px-[5%] mx-auto  my-10 space-y-7   text-center ">
         <div className="flex justify-between items-center md:flex-row flex-col-reverse">
@@ -294,6 +298,8 @@ const HomePage = () => {
             <EventCard key={idx} event={event} />
           ))}
         </div>
+
+        <InstagramPosts />
       </div>
       <hr className="my-10 border-2 text-[#3f3b3b6b] "></hr>
       {/* domain section */}

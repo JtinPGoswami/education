@@ -3,12 +3,14 @@ import question from "../assets/question.jpg";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
+import { States } from "../data/StatesData";
+import toast from "react-hot-toast";
 
 gsap.registerPlugin(ScrollTrigger);
+
 const Question = () => {
-
-  const elemRef=useRef()
-
+  const elemRef = useRef();
+  const [loading, setLoading] = useState(false);
   useGSAP(() => {
     gsap.from(elemRef.current, {
       y: 150,
@@ -39,22 +41,55 @@ const Question = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      state: "",
-      city: "",
-      time: "",
-      message: "",
-    });
+    setLoading(true);
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbwpJcQDaMukzOEHEPSO13xf3aMVPZk68-47WvIhFwrtOy4o8jip4MRoyM0kPwjhIoKVUQ/exec";
+
+    try {
+      const formDataToSend = new FormData();
+      formDataToSend.append("name", formData.name);
+      formDataToSend.append("email", formData.email);
+      formDataToSend.append("phone", formData.phone);
+      formDataToSend.append("state", formData.state);
+      formDataToSend.append("city", formData.city);
+      formDataToSend.append("time", formData.time);
+      formDataToSend.append("message", formData.message);
+
+      const response = await fetch(scriptURL, {
+        method: "POST",
+        body: formDataToSend, // Send as FormData, no headers needed
+      });
+
+      if (response.ok) {
+        const result = await response.json(); // Parse JSON response from script
+        if (result.status === "success") {
+          toast.success("Form submitted successfully!");
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            state: "",
+            city: "",
+            time: "",
+            message: "",
+          });
+        } else {
+          toast.error("Failed to submit form: ");
+        }
+      } else {
+        toast.error("Failed to submit form: ");
+      }
+    } catch (error) {
+      toast.error("Failed to submit form: ");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
-    <div  ref={elemRef} className="mt-20" id="help">
+    <div ref={elemRef} className="mt-20" id="help">
       {/* Heading Section */}
       <div className="text-center md:w-[60%] w-[95%] mx-auto space-y-5 mb-10">
         <h3 className="text-3xl font-bold">
@@ -66,14 +101,16 @@ const Question = () => {
         </p>
         <p>
           Not sure which college is the right fit for you? Fill out the form
-          below, and our experts will get in touch to assist you.Fill out the form below and one of our experts will contact you at the best time to discuss your options.
+          below, and our experts will get in touch to assist you. Fill out the
+          form below and one of our experts will contact you at the best time to
+          discuss your options.
         </p>
       </div>
 
       {/* Form Container with Border Animation */}
-      <div className=" md:w-[90%] w-full  mx-auto bg-white ">
+      <div className="md:w-[90%] w-full mx-auto bg-white">
         {/* Form */}
-        <div className=" w-full flex justify-between items-center md:flex-row flex-col-reverse bg-white p-6  rounded-md ">
+        <div className="w-full flex justify-between items-center md:flex-row flex-col-reverse bg-white p-6 rounded-md">
           <form className="md:w-1/2 w-full space-y-6" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {/* Name */}
@@ -156,10 +193,14 @@ const Question = () => {
                   required
                   aria-label="State"
                 >
-                  <option value="">Select State</option>
-                  {/* Add more states dynamically if required */}
-                  <option value="Madhya Pradesh">Madhya Pradesh</option>
-                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="" disabled={true}>
+                    Select State
+                  </option>
+                  {States.map((state) => (
+                    <option key={state} value={state}>
+                      {state}
+                    </option>
+                  ))}
                 </select>
               </div>
 
@@ -228,15 +269,24 @@ const Question = () => {
 
             {/* Submit */}
             <div className="text-center">
-              <button
-                type="submit"
-                className="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition"
-              >
-                Submit
-              </button>
+              {loading ? (
+                <button
+                  disabled={true}
+                  className="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition"
+                >
+                  Submitting ..
+                </button>
+              ) : (
+                <button
+                  type="submit"
+                  className="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition"
+                >
+                  Submit
+                </button>
+              )}
             </div>
           </form>
-          <div className="md:w-1/2 w-full h-full flex justify-center items-center ">
+          <div className="md:w-1/2 w-full h-full flex justify-center items-center">
             <div className="w-full h-full">
               <img
                 src={question}

@@ -189,7 +189,7 @@ export const collegeDetailedData = [
       },
       {
         name: "Sarah Lee",
-        rating: 3.5,
+        rating: 4.2,
         review:
           "The academic structure is solid, but the campus could use some improvements in terms of infrastructure. Placement opportunities are decent, but I think more internships could be offered.",
       },
@@ -231,7 +231,7 @@ export const collegeDetailedData = [
 
   {
     name: "IIEBM Indus Business School",
-    location: "Mumbai, Pune",
+    location: "Pune",
     rating: "4.4/5",
     establishmentYear: "2000",
     type: "Private Institute",
@@ -402,8 +402,8 @@ export const collegeDetailedData = [
   },
 
   {
-    name: "IS Management Studies",
-    location: "Mumbai, Pune",
+    name: "ISMS PUNE ",
+    location: "Pune",
     rating: "4.5/5",
     type: "Private Institute",
     id: 3,
@@ -1766,7 +1766,7 @@ export const collegeDetailedData = [
   {
     name: "ITM Business School",
     location: " Navi Mumbai, MH",
-    rating: "3.9/5",
+    rating: "4.4/5",
     type: "Private Institute",
     id: 11,
     imageUrl: "colleges/ITM_cover.jpeg",
@@ -1924,7 +1924,7 @@ export const collegeDetailedData = [
   {
     name: "IES MCRC PG",
     location: " Bandra West Mumbai, MH",
-    rating: "3.7/5",
+    rating: "4.7/5",
     type: "Private Institute",
     id: 12,
     imageUrl: "colleges/IES_MARC_cover.png",
@@ -2730,7 +2730,7 @@ export const collegeDetailedData = [
   {
     name: "Alliance University",
     location: " Bangalore, KA",
-    rating: "3.9/5",
+    rating: "4.8/5",
     type: "Private Institute",
     id: 17,
     imageUrl: "colleges/Alliance_cover.jpeg",
@@ -3269,7 +3269,7 @@ export const collegeDetailedData = [
   {
     name: "ATLAS SkillTech University",
     location: " Kurla West, Mumbai MH",
-    rating: "3.9/5",
+    rating: "4.3/5",
     type: "Private Institute",
     id: 20,
     imageUrl: "colleges/ATLAS_cover.jpeg",
