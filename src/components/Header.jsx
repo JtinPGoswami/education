@@ -5,7 +5,7 @@ import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useCollege } from "../context/CollegeContext";
 import { collegeDetailedData } from "../data/college";
-
+import { MdKeyboardArrowDown } from "react-icons/md";
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
@@ -16,6 +16,20 @@ const Header = () => {
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  const [isHovered, setIsHovered] = useState(false);
+  const timeoutRef = useRef(null);
+
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setIsHovered(false);
+    }, 1500);
   };
 
   // const handleSearch = (e) => {
@@ -115,23 +129,39 @@ const Header = () => {
                 Home
               </li>
             </NavLink>
-
-            <button className="cursor-pointer text-base font-semibold hover:text-[#77d693]">
-              Campus Ambassador
-            </button>
-            <div>
-              <li
-                className="cursor-pointer text-base font-semibold hover:text-[#77d693]"
-                onClick={() => handleNavigation("campus-ambassador")}
+            <div className="relative  flex flex-col items-center">
+              <button
+                className={`cursor-pointer flex items-center  gap-2 text-base font-semibold hover:text-[#77d693] ${
+                  isHovered ? "text-[#77d693]" : ""
+                }`}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
               >
-                Become a Campus Ambassador
-              </li>
-              <li
-                className="cursor-pointer text-base text-center font-semibold hover:text-[#77d693]"
-                onClick={() => handleNavigation("connect-campus-ambassador")}
+                Campus Ambassador
+                <MdKeyboardArrowDown />
+              </button>
+              <div
+                className={`bg-white absolute top-16 px-4 space-y-3 w-fit py-2 text-nowrap shadow-lg z-50 transition-all duration-400 ease-linear  ${
+                  isHovered
+                    ? "opacity-100 scale-100"
+                    : "opacity-0 scale-95 pointer-events-none"
+                }`}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
               >
-                Connect a Campus Ambassador
-              </li>
+                <li
+                  className="cursor-pointer text-sm font-semibold hover:text-[#77d693]"
+                  onClick={() => handleNavigation("campus-ambassador")}
+                >
+                  Become a Campus Ambassador
+                </li>
+                <li
+                  className="cursor-pointer text-sm  font-semibold hover:text-[#77d693]"
+                  onClick={() => handleNavigation("connect-campus-ambassador")}
+                >
+                  Connect a Campus Ambassador
+                </li>
+              </div>
             </div>
             <NavLink
               to={"/college"}
